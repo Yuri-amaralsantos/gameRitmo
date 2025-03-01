@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://yuos50rlc781"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_gd6wj"]
+[ext_resource type="PackedScene" uid="uid://23hfx5yy3rgk" path="res://Scenes/letter.tscn" id="2_lvdhl"]
+[ext_resource type="Texture2D" uid="uid://dlh8e7ojcbm1m" path="res://Assets/Background/sprite.jpg" id="3_deukd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_odbgk"]
+size = Vector2(842.5, 83)
+
+[node name="Control" type="Node2D"]
+script = ExtResource("1_gd6wj")
+letter_scene = ExtResource("2_lvdhl")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="HitZone" type="Node2D" parent="."]
+position = Vector2(121, 403)
+
+[node name="Sprite2D" type="Sprite2D" parent="HitZone"]
+position = Vector2(299.5, 122)
+scale = Vector2(26.2188, 1.6875)
+texture = ExtResource("3_deukd")
+
+[node name="Area2D" type="Area2D" parent="HitZone" groups=["hit_zone"]]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitZone/Area2D"]
+position = Vector2(299, 139)
+shape = SubResource("RectangleShape2D_odbgk")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

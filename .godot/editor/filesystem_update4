@@ -1,0 +1,5 @@
+res://Scenes/main.tscn
+res://main.gd
+res://Scripts/main.gd
+res://Scripts/letter.gd
+res://Scenes/letter.tscn
