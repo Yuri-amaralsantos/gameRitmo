@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://yuos50rlc781"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_gd6wj"]
-[ext_resource type="PackedScene" uid="uid://23hfx5yy3rgk" path="res://Scenes/letter.tscn" id="2_lvdhl"]
+[ext_resource type="PackedScene" path="res://Scenes/letter.tscn" id="2_lvdhl"]
 [ext_resource type="Texture2D" uid="uid://dlh8e7ojcbm1m" path="res://Assets/Background/sprite.jpg" id="3_deukd"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_odbgk"]
 size = Vector2(842.5, 83)

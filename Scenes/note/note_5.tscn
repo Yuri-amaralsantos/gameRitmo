@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://3xlvrh6ahrc3"]
+
+[ext_resource type="PackedScene" uid="uid://xdv0ws6i2gxw" path="res://Scenes/note/note.tscn" id="1_teumf"]
+
+[node name="Note5" instance=ExtResource("1_teumf")]
+
+[node name="Label" parent="." index="2"]
+text = "T"

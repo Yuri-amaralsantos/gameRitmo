@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://xdv0ws6i2gxw"]
+
+[ext_resource type="Script" path="res://Scenes/note/note.gd" id="1_xgowx"]
+[ext_resource type="Texture2D" uid="uid://yhtkysiaw6oi" path="res://Assets/note_container/note_sprite_temp.png" id="2_5htrl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ocvah"]
+size = Vector2(60, 60)
+
+[node name="Note" type="Area2D" groups=["note"]]
+script = ExtResource("1_xgowx")
+
+[node name="Note" type="Sprite2D" parent="."]
+texture = ExtResource("2_5htrl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ocvah")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "[NoteKey]"

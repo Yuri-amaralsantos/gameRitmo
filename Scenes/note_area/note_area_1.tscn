@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyl0odtldacyn"]
+
+[ext_resource type="PackedScene" uid="uid://b572r5ogjp4eh" path="res://Scenes/note_area/note_area.tscn" id="1_2x0qx"]
+
+[node name="NoteArea1" instance=ExtResource("1_2x0qx")]
+area_number = 1

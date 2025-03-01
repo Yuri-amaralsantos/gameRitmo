@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b572r5ogjp4eh"]
+
+[ext_resource type="Script" path="res://Scenes/note_area/note_area.gd" id="1_r0v7h"]
+[ext_resource type="Texture2D" uid="uid://dryd03p3qd110" path="res://Assets/note_container/note_contaiter_temp.png" id="1_vn4qp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lripu"]
+size = Vector2(70, 50)
+
+[node name="NoteArea" type="Area2D"]
+script = ExtResource("1_r0v7h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vn4qp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lripu")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
