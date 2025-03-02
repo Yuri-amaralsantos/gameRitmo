@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwv8ovfgxrrla"]
-
-[ext_resource type="PackedScene" uid="uid://b572r5ogjp4eh" path="res://Scenes/note_area/note_area.tscn" id="1_b252p"]
-
-[node name="NoteArea3" instance=ExtResource("1_b252p")]
-area_number = 3

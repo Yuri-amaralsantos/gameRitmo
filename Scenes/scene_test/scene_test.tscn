@@ -1,12 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://b2nnqlso52w8i"]
+[gd_scene load_steps=5 format=3 uid="uid://b2nnqlso52w8i"]
 
 [ext_resource type="Texture2D" uid="uid://dlh8e7ojcbm1m" path="res://Assets/Background/sprite.jpg" id="1_6824p"]
 [ext_resource type="Script" path="res://Scenes/scene_test/scene_test.gd" id="1_hu4i4"]
-[ext_resource type="PackedScene" uid="uid://cyl0odtldacyn" path="res://Scenes/note_area/note_area_1.tscn" id="3_y0nss"]
-[ext_resource type="PackedScene" uid="uid://thyr50aoakkw" path="res://Scenes/note_area/note_area_2.tscn" id="4_0ycp4"]
-[ext_resource type="PackedScene" uid="uid://cwv8ovfgxrrla" path="res://Scenes/note_area/note_area_3.tscn" id="5_vdb0a"]
-[ext_resource type="PackedScene" uid="uid://duuiglsbmiskm" path="res://Scenes/note_area/note_area_4.tscn" id="6_ikuik"]
-[ext_resource type="PackedScene" uid="uid://chkwuc7iw28gx" path="res://Scenes/note_area/note_area_5.tscn" id="7_62hwe"]
+[ext_resource type="PackedScene" uid="uid://b572r5ogjp4eh" path="res://Scenes/note_area/note_area.tscn" id="3_m5afr"]
+[ext_resource type="PackedScene" uid="uid://bx4d6qgheb0w3" path="res://Scenes/score/score.tscn" id="4_eh1wr"]
 
 [node name="SceneTest" type="Node2D"]
 script = ExtResource("1_hu4i4")
@@ -16,66 +13,18 @@ scale = Vector2(36.0313, 20.3438)
 texture = ExtResource("1_6824p")
 centered = false
 
-[node name="NoteAreaContainer" type="Node2D" parent="."]
+[node name="NoteArea" parent="." instance=ExtResource("3_m5afr")]
+position = Vector2(100, 324)
 
-[node name="NoteArea1" parent="NoteAreaContainer" instance=ExtResource("3_y0nss")]
-position = Vector2(200, 500)
+[node name="MarkerNoteArea" type="Marker2D" parent="."]
+position = Vector2(1250, 324)
 
-[node name="NoteArea2" parent="NoteAreaContainer" instance=ExtResource("4_0ycp4")]
-position = Vector2(400, 500)
-
-[node name="NoteArea3" parent="NoteAreaContainer" instance=ExtResource("5_vdb0a")]
-position = Vector2(600, 500)
-
-[node name="NoteArea4" parent="NoteAreaContainer" instance=ExtResource("6_ikuik")]
-position = Vector2(800, 500)
-
-[node name="NoteArea5" parent="NoteAreaContainer" instance=ExtResource("7_62hwe")]
-position = Vector2(1000, 500)
-
-[node name="NoteSpawnerContainer" type="Node2D" parent="."]
-
-[node name="MarkerNoteArea1" type="Marker2D" parent="NoteSpawnerContainer"]
-position = Vector2(200, -80)
-
-[node name="MarkerNoteArea2" type="Marker2D" parent="NoteSpawnerContainer"]
-position = Vector2(400, -80)
-
-[node name="MarkerNoteArea3" type="Marker2D" parent="NoteSpawnerContainer"]
-position = Vector2(600, -80)
-
-[node name="MarkerNoteArea4" type="Marker2D" parent="NoteSpawnerContainer"]
-position = Vector2(800, -80)
-
-[node name="MarkerNoteArea5" type="Marker2D" parent="NoteSpawnerContainer"]
-position = Vector2(1000, -80)
+[node name="TimerNote" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
 
 [node name="NoteContainer" type="Node2D" parent="."]
 
-[node name="TimerContainer" type="Node2D" parent="."]
+[node name="Score" parent="." instance=ExtResource("4_eh1wr")]
 
-[node name="TimerNote1" type="Timer" parent="TimerContainer"]
-wait_time = 4.0
-autostart = true
-
-[node name="TimerNote2" type="Timer" parent="TimerContainer"]
-wait_time = 6.0
-autostart = true
-
-[node name="TimerNote3" type="Timer" parent="TimerContainer"]
-wait_time = 7.0
-autostart = true
-
-[node name="TimerNote4" type="Timer" parent="TimerContainer"]
-wait_time = 8.0
-autostart = true
-
-[node name="TimerNote5" type="Timer" parent="TimerContainer"]
-wait_time = 9.0
-autostart = true
-
-[connection signal="timeout" from="TimerContainer/TimerNote1" to="." method="_on_timer_note_1_timeout"]
-[connection signal="timeout" from="TimerContainer/TimerNote2" to="." method="_on_timer_note_2_timeout"]
-[connection signal="timeout" from="TimerContainer/TimerNote3" to="." method="_on_timer_note_3_timeout"]
-[connection signal="timeout" from="TimerContainer/TimerNote4" to="." method="_on_timer_note_4_timeout"]
-[connection signal="timeout" from="TimerContainer/TimerNote5" to="." method="_on_timer_note_5_timeout"]
+[connection signal="timeout" from="TimerNote" to="." method="_on_timer_note_timeout"]

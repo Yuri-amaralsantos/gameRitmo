@@ -1,19 +1,46 @@
-[gd_scene load_steps=4 format=3 uid="uid://b572r5ogjp4eh"]
+[gd_scene load_steps=6 format=3 uid="uid://b572r5ogjp4eh"]
 
 [ext_resource type="Script" path="res://Scenes/note_area/note_area.gd" id="1_r0v7h"]
 [ext_resource type="Texture2D" uid="uid://dryd03p3qd110" path="res://Assets/note_container/note_contaiter_temp.png" id="1_vn4qp"]
+[ext_resource type="Texture2D" uid="uid://cwi6o688ucrpd" path="res://Assets/note_container/note_contaiter_middle_temp.png" id="3_m6d51"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnjld"]
+size = Vector2(140, 70)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lripu"]
-size = Vector2(70, 50)
+size = Vector2(1, 70)
 
 [node name="NoteArea" type="Area2D"]
 script = ExtResource("1_r0v7h")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mnjld")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_vn4qp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Middle" type="Sprite2D" parent="Sprite2D"]
+texture = ExtResource("3_m6d51")
+
+[node name="CollisionSoon" type="Area2D" parent="."]
+position = Vector2(70, 0)
+
+[node name="CollisionSoon" type="CollisionShape2D" parent="CollisionSoon"]
+shape = SubResource("RectangleShape2D_lripu")
+
+[node name="CollisionPerfect" type="Area2D" parent="."]
+
+[node name="CollisionPerfect" type="CollisionShape2D" parent="CollisionPerfect"]
+shape = SubResource("RectangleShape2D_lripu")
+
+[node name="CollisionLate" type="Area2D" parent="."]
+position = Vector2(-70, 0)
+
+[node name="CollisionLate" type="CollisionShape2D" parent="CollisionLate"]
 shape = SubResource("RectangleShape2D_lripu")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="area_entered" from="CollisionSoon" to="." method="_on_collision_soon_area_entered"]
+[connection signal="area_entered" from="CollisionPerfect" to="." method="_on_collision_perfect_area_entered"]
+[connection signal="area_entered" from="CollisionLate" to="." method="_on_collision_late_area_entered"]
