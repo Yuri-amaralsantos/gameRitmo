@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bawyban8qs0sb"]
+
+[ext_resource type="PackedScene" uid="uid://boqc3dbjcxfju" path="res://Scenes/internote/internote.tscn" id="1_30311"]
+
+[node name="Internote3" instance=ExtResource("1_30311")]
+
+[node name="Label" parent="." index="2" groups=["Intenote", "Internote3"]]
+text = "K"

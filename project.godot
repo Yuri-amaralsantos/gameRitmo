@@ -34,10 +34,16 @@ enabled=PackedStringArray()
 [global_group]
 
 hit_zone=""
-note1=""
-note2=""
-note3=""
-note4=""
+KeyNote1=""
+KeyNote2=""
+KeyNote3=""
+KeyNote4=""
+KeyNote=""
+Intenote=""
+Internote1=""
+Internote2=""
+Internote3=""
+Internote4=""
 
 [importer_defaults]
 
@@ -63,7 +69,7 @@ texture={
 
 [input]
 
-KeyNote0={
+KeyNoteMistake={
 "deadzone": 0.5,
 "events": []
 }

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://xdv0ws6i2gxw" path="res://Scenes/note/note.tscn" id="1_kefb3"]
 
-[node name="Note3" groups=["note3"] instance=ExtResource("1_kefb3")]
+[node name="Note3" groups=["KeyNote", "KeyNote3"] instance=ExtResource("1_kefb3")]
 
-[node name="Label" parent="." index="2" groups=["note3"]]
+[node name="Label" parent="." index="2"]
 text = "K"
