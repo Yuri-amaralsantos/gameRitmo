@@ -20,29 +20,29 @@ const INTERNOTE_4 = preload("res://Scenes/internote/internote_4.tscn")
 
 
 func _ready() -> void:
-	instantiate_new_note(notes.pick_random())
-	GameManager.reset_note_and_internote_quantity()
+    instantiate_new_note(notes.pick_random())
+    GameManager.reset_note_and_internote_quantity()
 
 func _process(delta: float) -> void:
-	pass
+    pass
 
 func instantiate_new_note(note: PackedScene) -> void:
-	var new_note = note.instantiate()
-	new_note.position = marker_note_area.position
-	note_container.add_child(new_note)
+    var new_note = note.instantiate()
+    new_note.position = marker_note_area.position
+    note_container.add_child(new_note)
 
 func _on_timer_note_timeout() -> void:
-	print(timer_note.wait_time)
-	if GameManager.note_quantity < GameManager.note_quantity_limit:
-		instantiate_new_note(notes.pick_random())
-		GameManager.add_note_quantity()
-		if GameManager.note_quantity == GameManager.note_quantity_limit - 2:
-			timer_note.wait_time = 0.75
-	elif GameManager.note_quantity >= GameManager.note_quantity_limit and GameManager.internote_quantity < GameManager.internote_quantity_limit:
-		instantiate_new_note(internotes.pick_random())
-		GameManager.add_internote_quantity()
-	elif GameManager.internote_quantity == GameManager.internote_quantity_limit:
-		instantiate_new_note(notes.pick_random())
-		timer_note.wait_time = 1.5
-		GameManager.reset_note_and_internote_quantity()
-		
+    print(timer_note.wait_time)
+    if GameManager.note_quantity < GameManager.note_quantity_limit:
+        instantiate_new_note(notes.pick_random())
+        GameManager.add_note_quantity()
+        if GameManager.note_quantity == GameManager.note_quantity_limit - 2:
+            timer_note.wait_time = 0.75
+    elif GameManager.note_quantity >= GameManager.note_quantity_limit and GameManager.internote_quantity < GameManager.internote_quantity_limit:
+        instantiate_new_note(internotes.pick_random())
+        GameManager.add_internote_quantity()
+    elif GameManager.internote_quantity == GameManager.internote_quantity_limit:
+        instantiate_new_note(notes.pick_random())
+        timer_note.wait_time = 1.5
+        GameManager.reset_note_and_internote_quantity()
+        

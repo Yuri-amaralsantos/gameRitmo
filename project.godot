@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ritmoGame"
-run/main_scene="res://Scenes/scene_test/scene_test.tscn"
+run/main_scene="res://Scenes/mainMenu/mainMenu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 run/low_processor_mode=true
 

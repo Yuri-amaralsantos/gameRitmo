@@ -1,5 +1,8 @@
-Node2D
+VBoxContainer
+BoxContainer
+Button
 Label
+Node2D
 Sprite2D
 CollisionShape2D
 Area2D
@@ -9,6 +12,3 @@ Marker2D
 Node
 Timer
 RichTextLabel
-VBoxContainer
-Control
-Button

@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmw3p8vnwqy8v"]
+
+[ext_resource type="Script" path="res://Scenes/mainMenu/settings_menu.gd" id="1_rlddu"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rlddu")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.5
+offset_top = 69.0
+offset_right = 172.5
+offset_bottom = 138.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "Configurações"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -225.5
+offset_right = 114.0
+offset_bottom = 225.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(193, 92)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="setting1" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "config1"
+
+[node name="setting2" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "config2"
+
+[node name="back" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Voltar"
+
+[connection signal="pressed" from="VBoxContainer2/back" to="." method="_on_back_pressed"]
