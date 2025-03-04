@@ -2,5 +2,13 @@ extends Area2D
 
 class_name Internote
 
+@export var internote_number: int = 0
+
 func _process(delta: float) -> void:
-    position.x -= GameManager.note_speed * delta
+	combo_time()
+	
+func combo_time() -> void:
+	if GameManager.combo_activated == true:
+		if Input.is_action_just_pressed("KeyNote%s" % internote_number):
+			queue_free()
+	

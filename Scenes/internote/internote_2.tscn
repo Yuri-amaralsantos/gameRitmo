@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://boqc3dbjcxfju" path="res://Scenes/internote/internote.tscn" id="1_tlalk"]
 
 [node name="Internote2" groups=["Intenote", "Internote2"] instance=ExtResource("1_tlalk")]
+internote_number = 2
 
 [node name="Label" parent="." index="2" groups=["Intenote", "Internote2"]]
 text = "J"

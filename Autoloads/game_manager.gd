@@ -1,26 +1,18 @@
 extends Node
 
-var note_quantity: int = 0
-var note_quantity_limit: int = 5
-
-var internote_quantity: int = 0
-var internote_quantity_limit: int = 3
+enum COMBO_PERCENTAGE_INCREASE {LATE = 5, SOON = 10, PERFECT = 20}
 
 var note_speed: float = 200.0
 
 
-func add_note_quantity() -> void:
-    note_quantity += 1
-    
-func add_internote_quantity() -> void:
-    internote_quantity += 1
+var combo_percentage: int = 0
+var combo_cooldown_max_value: int = 100
+var increase_combo_percentage_holder: int = 0
+var combo_is_possible: bool = true
+var combo_activated: bool = false
 
-func reset_note_quantity() -> void:
-    note_quantity = 0
-    
-func reset_internote_quantity() -> void:
-    internote_quantity = 0
-    
-func reset_note_and_internote_quantity() -> void:
-    reset_note_quantity()
-    reset_internote_quantity()
+func reset_combo_percentage() -> void:
+	combo_percentage = 0
+
+func increase_combo_percentage() -> void:
+	combo_percentage += increase_combo_percentage_holder
