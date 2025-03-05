@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://fpbv7phakx60"]
+[gd_scene load_steps=3 format=3 uid="uid://fpbv7phakx60"]
 
 [ext_resource type="PackedScene" uid="uid://xdv0ws6i2gxw" path="res://Scenes/note/note.tscn" id="1_b0ixx"]
+[ext_resource type="Texture2D" uid="uid://dxqdcf4q3xrvw" path="res://Assets/note_container/batidas.png" id="2_mo573"]
 
 [node name="Note4" groups=["KeyNote", "KeyNote4"] instance=ExtResource("1_b0ixx")]
 
+[node name="Note" parent="." index="0"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_mo573")
+vframes = 4
+frame = 1
+
 [node name="Label" parent="." index="2"]
-text = "L"
+visible = false
+text = "K"

@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8pws0ipa3kdv"]
+[gd_scene load_steps=3 format=3 uid="uid://c8pws0ipa3kdv"]
 
 [ext_resource type="PackedScene" uid="uid://boqc3dbjcxfju" path="res://Scenes/internote/internote.tscn" id="1_tu08l"]
+[ext_resource type="Texture2D" uid="uid://dxqdcf4q3xrvw" path="res://Assets/note_container/batidas.png" id="2_4qnf7"]
 
 [node name="Internote1" groups=["Intenote", "Internote1"] instance=ExtResource("1_tu08l")]
 internote_number = 1
 
+[node name="Note" parent="." index="0"]
+position = Vector2(-0.5, -1.75)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4qnf7")
+vframes = 4
+frame = 2
+
 [node name="Label" parent="." index="2" groups=["Intenote", "Internote1"]]
-text = "H"
+visible = false
+text = "D"
