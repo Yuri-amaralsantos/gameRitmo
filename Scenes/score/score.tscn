@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bx4d6qgheb0w3"]
+[gd_scene load_steps=4 format=3 uid="uid://bx4d6qgheb0w3"]
 
 [ext_resource type="Script" path="res://Scenes/score/score.gd" id="1_dpg2g"]
+[ext_resource type="FontFile" uid="uid://c10ovase8076a" path="res://Assets/note_container/Retro Gaming.ttf" id="2_1s8gd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_slxl4"]
+font = ExtResource("2_1s8gd")
+font_size = 24
 
 [node name="Score" type="Control"]
 layout_mode = 3
@@ -22,9 +27,11 @@ theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
 [node name="Label" type="Label" parent="MarginContainer"]
+texture_filter = 1
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Score: [PlaceHolder]"
+label_settings = SubResource("LabelSettings_slxl4")
 horizontal_alignment = 1
 vertical_alignment = 1
