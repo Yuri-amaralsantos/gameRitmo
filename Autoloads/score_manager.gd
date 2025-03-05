@@ -10,5 +10,5 @@ var score_holder: int = 0
 
 
 func add_score() -> void:
-	current_score += score_holder
-	
+    current_score += score_holder
+    
