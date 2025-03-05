@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bngjqd5pyjvdg"]
+
+[ext_resource type="Script" path="res://Scenes/speed_notes/speed_notes.gd" id="1_ljoap"]
+[ext_resource type="Texture2D" uid="uid://c04hqbtg6oeks" path="res://Assets/note_container/cooldown_speed_background_temp.png" id="1_mkiow"]
+[ext_resource type="Texture2D" uid="uid://b5sg0c2dlqi2f" path="res://Assets/note_container/cooldown_speed_loading_temp.png" id="2_qcgbp"]
+
+[node name="SpeedNotes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ljoap")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 84
+theme_override_constants/margin_top = 92
+theme_override_constants/margin_right = 92
+theme_override_constants/margin_bottom = 92
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+value = 100.0
+fill_mode = 4
+texture_under = ExtResource("1_mkiow")
+texture_progress = ExtResource("2_qcgbp")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
