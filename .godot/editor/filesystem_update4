@@ -1,8 +1,7 @@
+res://Scenes/speed_notes/speed_notes.tscn
 res://Scenes/scene_test/scene_test.tscn
 res://Scenes/internote/internote.tscn
 res://Scenes/note_area/note_area.tscn
 res://Scenes/note/note.tscn
 res://Scenes/combo/combo.tscn
-res://Scenes/speed_notes/speed_notes.tscn
 res://Scenes/character/character.tscn
-res://Scenes/combo/combo.gd

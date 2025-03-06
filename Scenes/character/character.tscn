@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dbkmju2eb7jj4"]
 
 [ext_resource type="Script" path="res://Scenes/character/character.gd" id="1_66htr"]
-[ext_resource type="Texture2D" uid="uid://dcjslnecwestc" path="res://Assets/note_container/pose_default.png" id="1_sly15"]
+[ext_resource type="Texture2D" uid="uid://ccjncoocrf3g7" path="res://Assets/note_container/goth_idle.png" id="2_ha44l"]
 
 [sub_resource type="Animation" id="Animation_ctqjm"]
 length = 0.001
@@ -84,8 +84,8 @@ _data = {
 script = ExtResource("1_66htr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("1_sly15")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ha44l")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

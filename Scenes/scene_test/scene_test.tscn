@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://b2nnqlso52w8i"]
 
-[ext_resource type="Texture2D" uid="uid://dlh8e7ojcbm1m" path="res://Assets/Background/sprite.jpg" id="1_6824p"]
 [ext_resource type="Script" path="res://Scenes/scene_test/scene_test.gd" id="1_hu4i4"]
+[ext_resource type="Texture2D" uid="uid://utt35feqk3qb" path="res://Assets/Background/fundo.png" id="2_7a3yx"]
 [ext_resource type="PackedScene" uid="uid://dbkmju2eb7jj4" path="res://Scenes/character/character.tscn" id="3_3nwar"]
 [ext_resource type="PackedScene" uid="uid://b572r5ogjp4eh" path="res://Scenes/note_area/note_area.tscn" id="3_m5afr"]
 [ext_resource type="PackedScene" uid="uid://bx4d6qgheb0w3" path="res://Scenes/score/score.tscn" id="4_eh1wr"]
@@ -63,18 +63,22 @@ _data = {
 script = ExtResource("1_hu4i4")
 
 [node name="BG" type="Sprite2D" parent="."]
-scale = Vector2(36.0313, 20.3438)
-texture = ExtResource("1_6824p")
+position = Vector2(-19, -522)
+texture = ExtResource("2_7a3yx")
 centered = false
 
 [node name="Character" parent="." instance=ExtResource("3_3nwar")]
-position = Vector2(576, 324)
+position = Vector2(381, 318)
+
+[node name="Camera2D" type="Camera2D" parent="Character"]
+position = Vector2(-3, 60)
+zoom = Vector2(1.5, 1.5)
 
 [node name="NoteArea" parent="." instance=ExtResource("3_m5afr")]
-position = Vector2(100, 324)
+position = Vector2(100, 451)
 
 [node name="MarkerNoteArea" type="Marker2D" parent="."]
-position = Vector2(1250, 324)
+position = Vector2(834, 451)
 
 [node name="TimerNote" type="Timer" parent="."]
 wait_time = 3.0
@@ -85,10 +89,29 @@ autostart = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Score" parent="CanvasLayer" instance=ExtResource("4_eh1wr")]
+offset_top = 175.0
+offset_right = -392.0
+scale = Vector2(0.5, 0.5)
 
 [node name="Combo" parent="CanvasLayer" instance=ExtResource("5_ky5dw")]
+anchors_preset = -1
+anchor_top = 0.272
+anchor_right = 0.662
+anchor_bottom = 0.94
+offset_left = -4.0
+offset_top = -0.256012
+offset_right = 0.375916
+offset_bottom = -0.120056
 
 [node name="SpeedNotes" parent="CanvasLayer" instance=ExtResource("7_f4wyi")]
+anchors_preset = -1
+anchor_top = 0.255
+anchor_right = 0.671
+anchor_bottom = 0.921
+offset_left = 5.0
+offset_top = -0.240021
+offset_right = 0.00799561
+offset_bottom = 0.191956
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Label")
@@ -97,10 +120,10 @@ libraries = {
 }
 
 [node name="Label" type="Label" parent="."]
-offset_left = 466.0
-offset_top = 200.0
-offset_right = 701.0
-offset_bottom = 337.0
+offset_left = 269.0
+offset_top = 326.0
+offset_right = 504.0
+offset_bottom = 463.0
 theme_override_font_sizes/font_size = 100
 text = "Start"
 
