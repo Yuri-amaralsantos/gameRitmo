@@ -1,8 +1,8 @@
 AudioStreamPlayer
 Node
+Node2D
 AnimationPlayer
 AudioStreamPlayer2D
-Node2D
 Label
 CollisionShape2D
 Area2D

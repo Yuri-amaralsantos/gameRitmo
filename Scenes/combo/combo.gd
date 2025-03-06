@@ -4,9 +4,7 @@ extends Control
 @onready var note_2: Node2D = $MarginContainer/Internotes/Internote2/Note2
 @onready var note_3: Node2D = $MarginContainer/Internotes/Internote3/Note3
 
-
 var internotes_added: bool = false
-
 
 var note_1_on_tree: bool = false
 var note_2_on_tree: bool = false
@@ -66,6 +64,7 @@ func wrong_note_finder() -> void:
 func on_combo_failed() -> void:
 	reset_wrong_note_finder()
 	GameManager.reset_combo_percentage()
+	SignalManager.on_audio_play.emit("combo_failed")
 	print("combo failed")
 	remove_internotes()
 	reset_combo()
@@ -79,6 +78,7 @@ func combo_cleared() -> void:
 		ScoreManager.add_combo_points()
 		GameManager.reset_combo_percentage()
 		internotes_added = false
+		SignalManager.on_audio_play.emit("combo_cleared")
 		reset_combo()
 		reset_wrong_note_finder()
 		SignalManager.on_combo_cleared.emit()
@@ -90,6 +90,7 @@ func reset_combo() -> void:
 func active_combo() -> void:
 	if combo_cooldown.value >= GameManager.combo_cooldown_max_value and Input.is_action_just_pressed("Combo") and GameManager.combo_is_possible == true and GameManager.combo_activated == false:
 		add_new_internotes()
+		SignalManager.on_audio_play.emit("activation")
 		GameManager.combo_activated = true
 	
 func instantiate_new_internote(internote: PackedScene, container: String) -> void:
@@ -150,3 +151,10 @@ func _on_note_2_child_entered_tree(node: Node) -> void:
 func _on_note_3_child_entered_tree(node: Node) -> void:
 	note_3_name = node.name
 	note_3_on_tree = true
+
+
+
+
+func _on_combo_cooldown_value_changed(value: float) -> void:
+	if value >= GameManager.combo_cooldown_max_value:
+		SignalManager.on_audio_play.emit("ready_to_use")

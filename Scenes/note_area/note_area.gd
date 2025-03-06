@@ -1,8 +1,5 @@
 extends Area2D
 
-@onready var sound: AnimationPlayer = $AnimationContainer/Sound
-@onready var animation_player: AnimationPlayer = $AnimationContainer/AnimationPlayer
-
 @onready var collision_soon: Area2D = $CollisionSoon
 @onready var collision_perfect: Area2D = $CollisionPerfect
 @onready var collision_late: Area2D = $CollisionLate
@@ -20,7 +17,7 @@ func on_key_pressed() -> void:
 	if is_on_area and Input.is_action_just_pressed("KeyNote%s" % stored_area_number):
 		if stored_area != null:
 			SignalManager.on_note_correct.emit("KeyNote%s" % stored_area_number)
-			sound.play("correct")
+			SignalManager.on_audio_play.emit("right_note")
 			add_score()
 	elif is_on_area and Input.is_action_just_pressed("KeyNote1"):
 		if stored_area != null:
@@ -36,7 +33,7 @@ func on_key_pressed() -> void:
 			key_wrong_pressed()
 
 func key_wrong_pressed() -> void:
-	sound.play("wrong")
+	SignalManager.on_audio_play.emit("wrong_note")
 	ScoreManager.reset_consecutive_hits()
 	GameManager.reset_combo_percentage()
 	stored_area.queue_free()

@@ -75,6 +75,7 @@ label_settings = ExtResource("4_lujdv")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[connection signal="value_changed" from="MarginContainer/Cooldown/ComboCooldown" to="." method="_on_combo_cooldown_value_changed"]
 [connection signal="child_entered_tree" from="MarginContainer/Internotes/Internote1/Note1" to="." method="_on_note_1_child_entered_tree"]
 [connection signal="child_exiting_tree" from="MarginContainer/Internotes/Internote1/Note1" to="." method="_on_note_1_child_exiting_tree"]
 [connection signal="child_entered_tree" from="MarginContainer/Internotes/Internote2/Note2" to="." method="_on_note_2_child_entered_tree"]

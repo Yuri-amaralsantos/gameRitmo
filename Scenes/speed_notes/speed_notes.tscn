@@ -58,4 +58,5 @@ vertical_alignment = 1
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
 
+[connection signal="value_changed" from="MarginContainer/TextureProgressBar" to="." method="_on_texture_progress_bar_value_changed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

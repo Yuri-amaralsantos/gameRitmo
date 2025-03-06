@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b2nnqlso52w8i"]
+[gd_scene load_steps=14 format=3 uid="uid://b2nnqlso52w8i"]
 
 [ext_resource type="Script" path="res://Scenes/scene_test/scene_test.gd" id="1_hu4i4"]
 [ext_resource type="Texture2D" uid="uid://utt35feqk3qb" path="res://Assets/Background/fundo.png" id="2_7a3yx"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bngjqd5pyjvdg" path="res://Scenes/speed_notes/speed_notes.tscn" id="7_f4wyi"]
 [ext_resource type="PackedScene" uid="uid://b8pb4sxol0pqb" path="res://Scenes/consecutive_hits/consecutive_hits.tscn" id="8_nrmr4"]
 [ext_resource type="PackedScene" uid="uid://c05skkshuk75j" path="res://Scenes/note_off_screen/note_off_screen.tscn" id="9_u3jqo"]
+[ext_resource type="PackedScene" uid="uid://cnunti8j31iad" path="res://Scenes/notes_sound_effects/notes_sound_effects.tscn" id="10_icgbu"]
 
 [sub_resource type="Animation" id="Animation_ljmqf"]
 length = 0.001
@@ -142,5 +143,7 @@ libraries = {
 
 [node name="NoteOffScreen" parent="." instance=ExtResource("9_u3jqo")]
 position = Vector2(-50, 324)
+
+[node name="NotesSoundEffects" parent="." instance=ExtResource("10_icgbu")]
 
 [connection signal="timeout" from="TimerNote" to="." method="_on_timer_note_timeout"]

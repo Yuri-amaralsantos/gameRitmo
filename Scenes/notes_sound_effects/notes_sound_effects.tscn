@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://cnunti8j31iad"]
+
+[ext_resource type="Script" path="res://Scenes/notes_sound_effects/notes_sound_effects.gd" id="1_hejnh"]
+[ext_resource type="AudioStream" uid="uid://brjh4j3apqcwo" path="res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav" id="2_6n6kb"]
+[ext_resource type="AudioStream" uid="uid://ddf1it1ngi7cl" path="res://Assets/music/mixkit-correct-answer-tone-2870.wav" id="3_7vmpq"]
+[ext_resource type="AudioStream" uid="uid://ccebrcuyq51c7" path="res://Assets/music/mixkit-bonus-earned-in-video-game-2058.wav" id="4_ovvg5"]
+[ext_resource type="AudioStream" uid="uid://ckta3gs72r8lt" path="res://Assets/music/mixkit-tech-break-fail-2947.wav" id="5_q1hv5"]
+[ext_resource type="AudioStream" uid="uid://dscnce5y7ws28" path="res://Assets/music/mixkit-game-bonus-reached-2065.wav" id="6_2h3nt"]
+[ext_resource type="AudioStream" uid="uid://biwpqhcass2cg" path="res://Assets/music/mixkit-short-bass-hit-2299.wav" id="7_y7yig"]
+
+[node name="NotesSoundEffects" type="Node"]
+script = ExtResource("1_hejnh")
+
+[node name="AudioContainer" type="Node" parent="."]
+
+[node name="WrongNote" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6n6kb")
+
+[node name="RightNote" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("3_7vmpq")
+
+[node name="ReadyToUse" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("4_ovvg5")
+
+[node name="ComboFailed" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("5_q1hv5")
+
+[node name="ComboCleared" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("6_2h3nt")
+
+[node name="Activation" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("7_y7yig")
