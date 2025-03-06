@@ -12,3 +12,9 @@ func combo_time() -> void:
 		if Input.is_action_just_pressed("Internote%s" % internote_number):
 			queue_free()
 	
+	
+
+
+func _on_tree_exiting() -> void:
+	#emitir um som da nota acertada
+	pass # Replace with function body.

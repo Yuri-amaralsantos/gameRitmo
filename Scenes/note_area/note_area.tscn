@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b572r5ogjp4eh"]
+[gd_scene load_steps=14 format=3 uid="uid://b572r5ogjp4eh"]
 
 [ext_resource type="Script" path="res://Scenes/note_area/note_area.gd" id="1_r0v7h"]
 [ext_resource type="Texture2D" uid="uid://bsj1eyr50dgaf" path="res://Assets/note_container/area_acerto.png" id="2_leg2t"]
@@ -11,12 +11,49 @@ size = Vector2(140, 70)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lripu"]
 size = Vector2(1, 70)
 
-[sub_resource type="Animation" id="Animation_0y1v3"]
-resource_name = "pulse"
+[sub_resource type="Animation" id="Animation_dghcc"]
+resource_name = "size"
+length = 4.0
+loop_mode = 2
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1c0mk"]
 _data = {
-"pulse": SubResource("Animation_0y1v3")
+"size": SubResource("Animation_dghcc")
+}
+
+[sub_resource type="Animation" id="Animation_rmi6d"]
+resource_name = "pulse"
+length = 5.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.784314), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_230er"]
+_data = {
+"pulse": SubResource("Animation_rmi6d")
 }
 
 [sub_resource type="Animation" id="Animation_53t2s"]
@@ -111,14 +148,22 @@ shape = SubResource("RectangleShape2D_lripu")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_hcc0u")
+max_polyphony = 10
 
 [node name="AnimationContainer" type="Node2D" parent="."]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimationContainer"]
+[node name="Pulse" type="AnimationPlayer" parent="AnimationContainer"]
 root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_1c0mk")
 }
+autoplay = "size"
+
+[node name="Size" type="AnimationPlayer" parent="AnimationContainer"]
+libraries = {
+"": SubResource("AnimationLibrary_230er")
+}
+autoplay = "pulse"
 
 [node name="Sound" type="AnimationPlayer" parent="AnimationContainer"]
 libraries = {

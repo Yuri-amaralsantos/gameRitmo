@@ -1,5 +1,7 @@
-AudioStreamPlayer2D
+AudioStreamPlayer
+Node
 AnimationPlayer
+AudioStreamPlayer2D
 Node2D
 Label
 CollisionShape2D
@@ -10,5 +12,3 @@ HBoxContainer
 MarginContainer
 Control
 Camera2D
-Timer
-TextureProgressBar
