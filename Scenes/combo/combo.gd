@@ -16,7 +16,9 @@ var note_3_on_tree: bool = false
 var note_1_name: String = ""
 var note_2_name: String = ""
 var note_3_name: String = ""
-var intenotes_name: Array = ["Internote1", "Internote2", "Internote3", "Internote4", ]
+var internotes_name: Array = ["Internote1", "Internote2", "Internote3", "Internote4"]
+var intenotes_name_default: Array = ["Internote1", "Internote2", "Internote3", "Internote4"]
+var wrong_note_finded: bool = false
 
 const INTERNOTE_1 = preload("res://Scenes/internote/internote_1.tscn")
 const INTERNOTE_2 = preload("res://Scenes/internote/internote_2.tscn")
@@ -35,12 +37,28 @@ func _process(delta: float) -> void:
 	active_combo()
 	combo_cleared()
 	wrong_key_pressed()
+	wrong_note_finder()
 
 func wrong_key_pressed() -> void:
-	#if (Input.is_action_just_pressed(note_1_name)) or (Input.is_action_just_pressed(note_2_name)) or (Input.is_action_just_pressed(note_3_name)) and GameManager.combo_activated:
-		#print("nice")
-	pass
+	if GameManager.combo_activated == true and wrong_note_finded == true:
+		print(internotes_name[0])
+		if Input.is_action_just_pressed(internotes_name[0]):
+			on_combo_failed()
+			reset_wrong_note_finder()
 	
+func reset_wrong_note_finder() -> void:
+	internotes_name.clear()
+	internotes_name = intenotes_name_default
+	wrong_note_finded = false
+
+func wrong_note_finder() -> void:
+	if GameManager.combo_activated == true and wrong_note_finded == false:
+		for i in range(1, 4):
+			internotes_name.erase("note_%s_name" % i)
+			print(internotes_name.find("note_%s_name" % i))
+			print(internotes_name.size())
+		if internotes_name.size() == 1:
+			wrong_note_finded == true
 
 func on_combo_failed() -> void:
 	GameManager.reset_combo_percentage()
@@ -49,7 +67,8 @@ func on_combo_failed() -> void:
 	reset_combo()
 
 func refresh_combo_cooldown() -> void:
-	combo_cooldown.value = GameManager.combo_percentage
+	combo_cooldown.value = 100
+	#GameManager.combo_percentage
 	
 func combo_cleared() -> void:
 	if note_1_on_tree == false and note_2_on_tree == false and note_3_on_tree == false and GameManager.combo_activated:
@@ -58,6 +77,7 @@ func combo_cleared() -> void:
 		GameManager.reset_combo_percentage()
 		internotes_added = false
 		reset_combo()
+		reset_wrong_note_finder()
 	
 func reset_combo() -> void:
 	GameManager.combo_is_possible = false
@@ -78,10 +98,10 @@ func instantiate_new_internote(internote: PackedScene, container: String) -> voi
 		"note_3":
 			note_3.add_child(new_note)
 	
-func add_new_internotes() -> void: ## ARRUMAR RANDOMIZADOR DUPLICADO
+func add_new_internotes() -> void:
 	if internotes_added == false:
 		internotes.shuffle()
-		for i in range(0, 4):
+		for i in range(1, 4):
 			instantiate_new_internote(internotes[i], "note_%s" % i)
 		internotes_added = true
 	
@@ -102,32 +122,32 @@ func remove_internote_children(internote: Array) -> void:
 
 
 func _on_note_1_child_exiting_tree(node: Node) -> void:
+	note_1_name = ""
 	note_1_on_tree = false
 
 
 func _on_note_2_child_exiting_tree(node: Node) -> void:
+	note_2_name = ""
 	note_2_on_tree = false
 
 
 func _on_note_3_child_exiting_tree(node: Node) -> void:
+	note_3_name = ""
 	note_3_on_tree = false
 
 
 
 
 func _on_note_1_child_entered_tree(node: Node) -> void:
-	print(node.name)
 	note_1_name = node.name
 	note_1_on_tree = true
 
 
 func _on_note_2_child_entered_tree(node: Node) -> void:
-	print(node.name)
 	note_1_name = node.name
 	note_2_on_tree = true
 
 
 func _on_note_3_child_entered_tree(node: Node) -> void:
-	print(node.name)
 	note_1_name = node.name
 	note_3_on_tree = true
