@@ -1,11 +1,11 @@
 extends Node2D
 
-const POSE_1 = preload("res://Assets/note_container/pose_1.png")
-const POSE_2 = preload("res://Assets/note_container/pose_2.png")
-const POSE_3 = preload("res://Assets/note_container/pose_3.png")
-const POSE_4 = preload("res://Assets/note_container/pose_4.png")
-const POSE_DEFAULT = preload("res://Assets/note_container/pose_default.png")
-const POSE_WRONG = preload("res://Assets/note_container/pose_wrong.png")
+const POSE_1 = preload("res://Assets/note_container/goth_pose_1.png")
+const POSE_2 = preload("res://Assets/note_container/goth_pose_2.png")
+const POSE_3 = preload("res://Assets/note_container/goth_pose_3.png")
+const POSE_4 = preload("res://Assets/note_container/goth_pose_4.png")
+const POSE_DEFAULT = preload("res://Assets/note_container/goth_idle.png")
+const POSE_WRONG = preload("res://Assets/note_container/goth_pose_1.png")
 
 
 @onready var sprite_2d: Sprite2D = $Sprite2D

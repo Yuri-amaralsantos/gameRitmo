@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b572r5ogjp4eh"]
 
 [ext_resource type="Script" path="res://Scenes/note_area/note_area.gd" id="1_r0v7h"]
-[ext_resource type="Texture2D" uid="uid://dryd03p3qd110" path="res://Assets/note_container/note_contaiter_temp.png" id="1_vn4qp"]
+[ext_resource type="Texture2D" uid="uid://bsj1eyr50dgaf" path="res://Assets/note_container/area_acerto.png" id="2_leg2t"]
 [ext_resource type="Texture2D" uid="uid://cwi6o688ucrpd" path="res://Assets/note_container/note_contaiter_middle_temp.png" id="3_m6d51"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mnjld"]
@@ -17,9 +17,10 @@ script = ExtResource("1_r0v7h")
 shape = SubResource("RectangleShape2D_mnjld")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_vn4qp")
+texture = ExtResource("2_leg2t")
 
 [node name="Middle" type="Sprite2D" parent="Sprite2D"]
+visible = false
 texture = ExtResource("3_m6d51")
 
 [node name="CollisionSoon" type="Area2D" parent="."]

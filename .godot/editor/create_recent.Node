@@ -1,9 +1,10 @@
+Label
+Camera2D
 Timer
 TextureProgressBar
 MarginContainer
 AnimationPlayer
 Sprite2D
-Label
 Button
 Control
 CollisionShape2D
@@ -11,5 +12,3 @@ Area2D
 Node2D
 TextureRect
 CanvasLayer
-VBoxContainer
-HBoxContainer
