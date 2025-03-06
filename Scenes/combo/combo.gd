@@ -12,12 +12,11 @@ var note_1_on_tree: bool = false
 var note_2_on_tree: bool = false
 var note_3_on_tree: bool = false
 
-
 var note_1_name: String = ""
 var note_2_name: String = ""
 var note_3_name: String = ""
 var internotes_name: Array = ["Internote1", "Internote2", "Internote3", "Internote4"]
-var intenotes_name_default: Array = ["Internote1", "Internote2", "Internote3", "Internote4"]
+var internotes_name_default: Array = ["Internote1", "Internote2", "Internote3", "Internote4"]
 var wrong_note_finded: bool = false
 
 const INTERNOTE_1 = preload("res://Scenes/internote/internote_1.tscn")
@@ -44,31 +43,35 @@ func wrong_key_pressed() -> void:
 		print(internotes_name[0])
 		if Input.is_action_just_pressed(internotes_name[0]):
 			on_combo_failed()
-			reset_wrong_note_finder()
 	
 func reset_wrong_note_finder() -> void:
 	internotes_name.clear()
-	internotes_name = intenotes_name_default
+	for i in internotes_name_default:
+		internotes_name.append(i)
 	wrong_note_finded = false
 
 func wrong_note_finder() -> void:
 	if GameManager.combo_activated == true and wrong_note_finded == false:
 		for i in range(1, 4):
-			internotes_name.erase("note_%s_name" % i)
-			print(internotes_name.find("note_%s_name" % i))
-			print(internotes_name.size())
+			match i:
+				1:
+					internotes_name.erase(note_1_name)
+				2:
+					internotes_name.erase(note_2_name)
+				3:
+					internotes_name.erase(note_3_name)
 		if internotes_name.size() == 1:
-			wrong_note_finded == true
+			wrong_note_finded = true
 
 func on_combo_failed() -> void:
+	reset_wrong_note_finder()
 	GameManager.reset_combo_percentage()
 	print("combo failed")
 	remove_internotes()
 	reset_combo()
 
 func refresh_combo_cooldown() -> void:
-	combo_cooldown.value = 100
-	#GameManager.combo_percentage
+	combo_cooldown.value = GameManager.combo_percentage
 	
 func combo_cleared() -> void:
 	if note_1_on_tree == false and note_2_on_tree == false and note_3_on_tree == false and GameManager.combo_activated:
@@ -78,6 +81,7 @@ func combo_cleared() -> void:
 		internotes_added = false
 		reset_combo()
 		reset_wrong_note_finder()
+		SignalManager.on_combo_cleared.emit()
 	
 func reset_combo() -> void:
 	GameManager.combo_is_possible = false
@@ -125,11 +129,9 @@ func _on_note_1_child_exiting_tree(node: Node) -> void:
 	note_1_name = ""
 	note_1_on_tree = false
 
-
 func _on_note_2_child_exiting_tree(node: Node) -> void:
 	note_2_name = ""
 	note_2_on_tree = false
-
 
 func _on_note_3_child_exiting_tree(node: Node) -> void:
 	note_3_name = ""
@@ -137,17 +139,14 @@ func _on_note_3_child_exiting_tree(node: Node) -> void:
 
 
 
-
 func _on_note_1_child_entered_tree(node: Node) -> void:
 	note_1_name = node.name
 	note_1_on_tree = true
 
-
 func _on_note_2_child_entered_tree(node: Node) -> void:
-	note_1_name = node.name
+	note_2_name = node.name
 	note_2_on_tree = true
 
-
 func _on_note_3_child_entered_tree(node: Node) -> void:
-	note_1_name = node.name
+	note_3_name = node.name
 	note_3_on_tree = true

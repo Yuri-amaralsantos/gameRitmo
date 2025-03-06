@@ -5,3 +5,10 @@ res://Scenes/note_area/note_area.tscn
 res://Scenes/note/note.tscn
 res://Scenes/combo/combo.tscn
 res://Scenes/character/character.tscn
+res://Scenes/character/character.gd
+res://Scenes/combo/combo.gd
+res://Autoloads/signal_manager.gd
+res://Scenes/internote/internote_2.tscn
+res://Scenes/internote/internote_1.tscn
+res://Scenes/internote/internote_3.tscn
+res://Scenes/internote/internote_4.tscn
