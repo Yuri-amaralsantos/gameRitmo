@@ -19,8 +19,8 @@ run/low_processor_mode=true
 
 SignalManager="*res://Autoloads/signal_manager.gd"
 SceneManager="*res://Autoloads/scene_manager.gd"
-ScoreManager="*res://Autoloads/score_manager.gd"
 GameManager="*res://Autoloads/game_manager.gd"
+ScoreManager="*res://Autoloads/score_manager.gd"
 
 [display]
 

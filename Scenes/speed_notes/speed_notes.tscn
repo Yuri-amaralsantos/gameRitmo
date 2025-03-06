@@ -19,33 +19,41 @@ script = ExtResource("1_ljoap")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -56.0
+offset_top = -176.0
+offset_right = 56.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 699
-theme_override_constants/margin_top = 92
-theme_override_constants/margin_right = 92
-theme_override_constants/margin_bottom = 10
+grow_vertical = 0
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="MarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 8
+size_flags_horizontal = 4
+size_flags_vertical = 4
 value = 100.0
 fill_mode = 3
 texture_under = ExtResource("2_xtl81")
 texture_progress = ExtResource("3_3r6cl")
 
-[node name="Label" type="Label" parent="MarginContainer/TextureProgressBar"]
-layout_mode = 0
-offset_left = 9.0
-offset_top = -50.0
-offset_right = 58.0
-offset_bottom = -27.0
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = -24
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_vertical = 8
 text = "Shift"
 label_settings = SubResource("LabelSettings_uu4sj")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0

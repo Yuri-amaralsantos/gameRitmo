@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741252203
+::res://::1741260282
 ::res://Assets/::1741028504
 ::res://Assets/Background/::1741252128
 fundo.png::CompressedTexture2D::1444205258807758753::1741252120::1741252128::1::::<><>::
@@ -31,25 +31,25 @@ pose_4.png::CompressedTexture2D::6241896620614501658::1741201151::1741201155::1:
 pose_default.png::CompressedTexture2D::7319332376847874576::1741204772::1741201185::1::::<><>::
 pose_wrong.png::CompressedTexture2D::2368058336507759996::1741204783::1741204792::1::::<><>::
 Retro Gaming.ttf::FontFile::6650248313430612726::1741199493::1741199555::1::::<><>::
-::res://Autoloads/::1741252138
+::res://Autoloads/::1741252613
 game_manager.gd::GDScript::-1::1741252137::0::1::::<>Node<>::
 scene_manager.gd::GDScript::-1::1741252138::0::1::::<>Node<>::
 score_manager.gd::GDScript::-1::1741252138::0::1::::<>Node<>::
-signal_manager.gd::GDScript::-1::1741252138::0::1::::<>Node<>::
+signal_manager.gd::GDScript::-1::1741252613::0::1::::<>Node<>::
 ::res://Scenes/::1741205139
-::res://Scenes/character/::1741252137
-character.gd::GDScript::-1::1741252137::0::1::::<>Node2D<>::
-character.tscn::PackedScene::7250840440677343555::1741252120::0::1::::<><>::res://Scenes/character/character.gd<>uid://ccjncoocrf3g7::::res://Assets/note_container/goth_idle.png
-::res://Scenes/combo/::1741252137
-combo.gd::GDScript::-1::1741252137::0::1::::<>Control<>::
-combo.tscn::PackedScene::6214234130446533118::1741252120::0::1::::<><>::res://Scenes/combo/combo.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-::res://Scenes/internote/::1741252137
+::res://Scenes/character/::1741258650
+character.gd::GDScript::-1::1741253154::0::1::::<>Node2D<>::
+character.tscn::PackedScene::7250840440677343555::1741258650::0::1::::<><>::res://Scenes/character/character.gd<>uid://ccjncoocrf3g7::::res://Assets/note_container/goth_idle.png
+::res://Scenes/combo/::1741258599
+combo.gd::GDScript::-1::1741256979::0::1::::<>Control<>::
+combo.tscn::PackedScene::6214234130446533118::1741258599::0::1::::<><>::res://Scenes/combo/combo.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+::res://Scenes/internote/::1741258599
 internote.gd::GDScript::-1::1741252137::0::1::::Internote<>Area2D<>::
-internote.tscn::PackedScene::3402266134432737298::1741251835::0::1::::<><>::res://Scenes/internote/internote.gd<>uid://bpjm1io5qmo5q::::res://Assets/note_container/internote_sprite_temp.png
-internote_1.tscn::PackedScene::7121408118008150243::1741199493::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_2.tscn::PackedScene::5895036703776200948::1741199493::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_3.tscn::PackedScene::2433296009506660921::1741199493::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_4.tscn::PackedScene::8467276633856594691::1741199493::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote.tscn::PackedScene::3402266134432737298::1741258599::0::1::::<><>::res://Scenes/internote/internote.gd<>uid://bpjm1io5qmo5q::::res://Assets/note_container/internote_sprite_temp.png
+internote_1.tscn::PackedScene::7121408118008150243::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_2.tscn::PackedScene::5895036703776200948::1741256841::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_3.tscn::PackedScene::2433296009506660921::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_4.tscn::PackedScene::8467276633856594691::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
 ::res://Scenes/mainMenu/::1741199691
 faseMenu.tscn::PackedScene::7774609245893225911::1741199691::0::1::::<><>::res://Scenes/mainMenu/fase_menu.gd
 fase_menu.gd::GDScript::-1::1741199628::0::1::::<>Control<>::
@@ -57,22 +57,22 @@ mainMenu.gd::GDScript::-1::1741199593::0::1::::<>Control<>::
 mainMenu.tscn::PackedScene::959532108884540224::1741199691::0::1::::<><>::res://Scenes/mainMenu/mainMenu.gd
 settingsMenu.tscn::PackedScene::8048673114363206423::1741114239::0::1::::<><>::res://Scenes/mainMenu/settings_menu.gd
 settings_menu.gd::GDScript::-1::1741199594::0::1::::<>Control<>::
-::res://Scenes/note/::1741251835
+::res://Scenes/note/::1741258599
 note.gd::GDScript::-1::1741200859::0::1::::Note<>Area2D<>::
-note.tscn::PackedScene::1621857423373082740::1741251835::0::1::::<><>::res://Scenes/note/note.gd<>uid://yhtkysiaw6oi::::res://Assets/note_container/note_sprite_temp.png
+note.tscn::PackedScene::1621857423373082740::1741258599::0::1::::<><>::res://Scenes/note/note.gd<>uid://yhtkysiaw6oi::::res://Assets/note_container/note_sprite_temp.png
 note_1.tscn::PackedScene::52072270550390734::1741211117::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
 note_2.tscn::PackedScene::3058011324581859019::1741211117::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
 note_3.tscn::PackedScene::3486325672813392201::1741211117::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
 note_4.tscn::PackedScene::382009807403567363::1741211117::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-::res://Scenes/note_area/::1741252137
+::res://Scenes/note_area/::1741258599
 note_area.gd::GDScript::-1::1741252137::0::1::::<>Area2D<>::
-note_area.tscn::PackedScene::4559817395878092107::1741252120::0::1::::<><>::res://Scenes/note_area/note_area.gd<>uid://bsj1eyr50dgaf::::res://Assets/note_container/area_acerto.png<>uid://cwi6o688ucrpd::::res://Assets/note_container/note_contaiter_middle_temp.png
-::res://Scenes/scene_test/::1741252138
+note_area.tscn::PackedScene::4559817395878092107::1741258599::0::1::::<><>::res://Scenes/note_area/note_area.gd<>uid://bsj1eyr50dgaf::::res://Assets/note_container/area_acerto.png<>uid://cwi6o688ucrpd::::res://Assets/note_container/note_contaiter_middle_temp.png
+::res://Scenes/scene_test/::1741258649
 scene_test.gd::GDScript::-1::1741252138::0::1::::<>Node2D<>::
-scene_test.tscn::PackedScene::4309174872571799738::1741252120::0::1::::<><>::res://Scenes/scene_test/scene_test.gd<>uid://utt35feqk3qb::::res://Assets/Background/fundo.png<>uid://dbkmju2eb7jj4::::res://Scenes/character/character.tscn<>uid://b572r5ogjp4eh::::res://Scenes/note_area/note_area.tscn<>uid://bx4d6qgheb0w3::::res://Scenes/score/score.tscn<>uid://cushr7vcbodso::::res://Scenes/combo/combo.tscn<>uid://bngjqd5pyjvdg::::res://Scenes/speed_notes/speed_notes.tscn
+scene_test.tscn::PackedScene::4309174872571799738::1741258649::0::1::::<><>::res://Scenes/scene_test/scene_test.gd<>uid://utt35feqk3qb::::res://Assets/Background/fundo.png<>uid://dbkmju2eb7jj4::::res://Scenes/character/character.tscn<>uid://b572r5ogjp4eh::::res://Scenes/note_area/note_area.tscn<>uid://bx4d6qgheb0w3::::res://Scenes/score/score.tscn<>uid://cushr7vcbodso::::res://Scenes/combo/combo.tscn<>uid://bngjqd5pyjvdg::::res://Scenes/speed_notes/speed_notes.tscn
 ::res://Scenes/score/::1741211117
 score.gd::GDScript::-1::1741114239::0::1::::<>Control<>::
 score.tscn::PackedScene::4060869402790821652::1741211117::0::1::::<><>::res://Scenes/score/score.gd<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-::res://Scenes/speed_notes/::1741252138
+::res://Scenes/speed_notes/::1741258599
 speed_notes.gd::GDScript::-1::1741252138::0::1::::<>Control<>::
-speed_notes.tscn::PackedScene::3311837147777421672::1741252120::0::1::::<><>::res://Scenes/speed_notes/speed_notes.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+speed_notes.tscn::PackedScene::3311837147777421672::1741258599::0::1::::<><>::res://Scenes/speed_notes/speed_notes.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf

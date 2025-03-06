@@ -1,12 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cushr7vcbodso"]
+[gd_scene load_steps=5 format=3 uid="uid://cushr7vcbodso"]
 
 [ext_resource type="Script" path="res://Scenes/combo/combo.gd" id="1_nhv6v"]
 [ext_resource type="Texture2D" uid="uid://iifc46i8kr1f" path="res://Assets/note_container/combo_sprite_vazio.png" id="2_30qnx"]
 [ext_resource type="Texture2D" uid="uid://c6cmpfry72msy" path="res://Assets/note_container/combo_sprite_cheio.png" id="3_g4dpl"]
-[ext_resource type="FontFile" uid="uid://c10ovase8076a" path="res://Assets/note_container/Retro Gaming.ttf" id="4_rgm3a"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_i6c1g"]
-font = ExtResource("4_rgm3a")
+[ext_resource type="LabelSettings" uid="uid://tmu14jo4nq46" path="res://Scenes/combo/px_font_16.tres" id="4_lujdv"]
 
 [node name="Combo" type="Control"]
 layout_mode = 3
@@ -19,19 +16,22 @@ script = ExtResource("1_nhv6v")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -116.0
+offset_top = -202.0
+offset_right = 116.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 56
-theme_override_constants/margin_top = 56
-theme_override_constants/margin_right = 56
-theme_override_constants/margin_bottom = 146
+grow_vertical = 0
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
 
 [node name="Cooldown" type="MarginContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/margin_bottom = -140
 
 [node name="ComboCooldown" type="TextureProgressBar" parent="MarginContainer/Cooldown"]
 layout_mode = 2
@@ -45,7 +45,7 @@ texture_progress = ExtResource("3_g4dpl")
 [node name="Internotes" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 8
+size_flags_vertical = 0
 theme_override_constants/separation = 60
 
 [node name="Internote1" type="Control" parent="MarginContainer/Internotes"]
@@ -63,14 +63,17 @@ layout_mode = 2
 
 [node name="Note3" type="Node2D" parent="MarginContainer/Internotes/Internote3"]
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 540.0
-offset_top = 456.0
-offset_right = 615.0
-offset_bottom = 479.0
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = -24
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_vertical = 8
 text = "Espaço"
-label_settings = SubResource("LabelSettings_i6c1g")
+label_settings = ExtResource("4_lujdv")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="child_entered_tree" from="MarginContainer/Internotes/Internote1/Note1" to="." method="_on_note_1_child_entered_tree"]
 [connection signal="child_exiting_tree" from="MarginContainer/Internotes/Internote1/Note1" to="." method="_on_note_1_child_exiting_tree"]

@@ -7,6 +7,7 @@ const GOTH_POSE_2 = preload("res://Assets/note_container/goth_pose_2.png")
 const GOTH_POSE_3 = preload("res://Assets/note_container/goth_pose_3.png")
 const GOTH_POSE_4 = preload("res://Assets/note_container/goth_pose_4.png")
 ## gotica wrong
+## gotica off-screen
 
 const GOTICA_COMBO_1 = preload("res://Assets/note_container/gotica_combo_1.png")
 ## combo failed wrong

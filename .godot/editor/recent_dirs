@@ -1,9 +1,11 @@
+res://Scenes/note_off_screen
+res://Scenes/score
+res://Scenes/combo
+res://Scenes/consecutive_hits
 res://Scenes/speed_notes
 res://Scenes/scene_test
 res://Scenes/character
-res://Scenes/combo
 res://Scenes/internote
-res://Scenes/score
 res://scenes/scene_test
 res://scenes/note_area
 res://Scenes/note

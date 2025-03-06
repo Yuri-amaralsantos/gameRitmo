@@ -32,11 +32,13 @@ func on_key_pressed() -> void:
 			key_wrong_pressed()
 
 func key_wrong_pressed() -> void:
+	ScoreManager.reset_consecutive_hits()
 	GameManager.reset_combo_percentage()
 	stored_area.queue_free()
 	SignalManager.on_note_incorrect.emit()
 
 func add_score() -> void:
+	ScoreManager.add_consecutive_hits()
 	ScoreManager.add_score()
 	GameManager.increase_combo_percentage()
 	GameManager.increase_speed_notes_percentage()
