@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c05skkshuk75j"]
+[gd_scene load_steps=4 format=3 uid="uid://c05skkshuk75j"]
 
 [ext_resource type="Script" path="res://Scenes/note_off_screen/note_off_screen.gd" id="1_eewrw"]
+[ext_resource type="AudioStream" uid="uid://brjh4j3apqcwo" path="res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav" id="2_efk6x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gihh2"]
 size = Vector2(10, 650)
@@ -10,5 +11,8 @@ script = ExtResource("1_eewrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_gihh2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_efk6x")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

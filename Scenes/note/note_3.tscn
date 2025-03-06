@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpw2jlj4yv53r"]
+[gd_scene load_steps=4 format=3 uid="uid://bpw2jlj4yv53r"]
 
 [ext_resource type="PackedScene" uid="uid://xdv0ws6i2gxw" path="res://Scenes/note/note.tscn" id="1_kefb3"]
 [ext_resource type="Texture2D" uid="uid://dxqdcf4q3xrvw" path="res://Assets/note_container/batidas.png" id="2_3qgsl"]
+[ext_resource type="AudioStream" uid="uid://caebudotcqk5y" path="res://Assets/music/mixkit-correct-answer-notification-947.wav" id="3_ht11d"]
 
 [node name="Note3" groups=["KeyNote", "KeyNote3"] instance=ExtResource("1_kefb3")]
 
@@ -13,3 +14,6 @@ vframes = 4
 [node name="Label" parent="." index="2"]
 visible = false
 text = "J"
+
+[node name="AudioStreamPlayer2D" parent="." index="3"]
+stream = ExtResource("3_ht11d")

@@ -21,6 +21,8 @@ var speed_notes_percentage: int = 0
 var speed_notes_cooldown_max_value: int = 100
 var increase_speed_notes_percentage_holder: int = 0
 
+
+
 func reset_combo_percentage() -> void:
 	combo_percentage = 0
 

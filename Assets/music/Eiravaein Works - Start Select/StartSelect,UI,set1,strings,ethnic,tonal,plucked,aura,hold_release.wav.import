@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://djesn0d04i5rr"
+path="res://.godot/imported/StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav-a066dfd3a6e43936cea2b994cfe06e0b.sample"
+
+[deps]
+
+source_file="res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav"
+dest_files=["res://.godot/imported/StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav-a066dfd3a6e43936cea2b994cfe06e0b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

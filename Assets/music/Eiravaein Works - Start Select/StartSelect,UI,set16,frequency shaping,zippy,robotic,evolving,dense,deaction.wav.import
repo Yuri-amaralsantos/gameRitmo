@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cwu05o7rdw3vd"
+path="res://.godot/imported/StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav-94cc7da1a02c5b81e4d631762edc1a1b.sample"
+
+[deps]
+
+source_file="res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav"
+dest_files=["res://.godot/imported/StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav-94cc7da1a02c5b81e4d631762edc1a1b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,14 +1,87 @@
-[gd_scene load_steps=6 format=3 uid="uid://b572r5ogjp4eh"]
+[gd_scene load_steps=12 format=3 uid="uid://b572r5ogjp4eh"]
 
 [ext_resource type="Script" path="res://Scenes/note_area/note_area.gd" id="1_r0v7h"]
 [ext_resource type="Texture2D" uid="uid://bsj1eyr50dgaf" path="res://Assets/note_container/area_acerto.png" id="2_leg2t"]
-[ext_resource type="Texture2D" uid="uid://cwi6o688ucrpd" path="res://Assets/note_container/note_contaiter_middle_temp.png" id="3_m6d51"]
+[ext_resource type="AudioStream" uid="uid://ddf1it1ngi7cl" path="res://Assets/music/mixkit-correct-answer-tone-2870.wav" id="4_35r11"]
+[ext_resource type="AudioStream" uid="uid://brjh4j3apqcwo" path="res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav" id="5_hcc0u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mnjld"]
 size = Vector2(140, 70)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lripu"]
 size = Vector2(1, 70)
+
+[sub_resource type="Animation" id="Animation_0y1v3"]
+resource_name = "pulse"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1c0mk"]
+_data = {
+"pulse": SubResource("Animation_0y1v3")
+}
+
+[sub_resource type="Animation" id="Animation_53t2s"]
+resource_name = "correct"
+length = 0.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AudioStreamPlayer2D:stream")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_35r11")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_7pciw"]
+resource_name = "wrong"
+length = 0.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AudioStreamPlayer2D:stream")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_hcc0u")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gg8hj"]
+_data = {
+"correct": SubResource("Animation_53t2s"),
+"wrong": SubResource("Animation_7pciw")
+}
 
 [node name="NoteArea" type="Area2D"]
 script = ExtResource("1_r0v7h")
@@ -18,10 +91,6 @@ shape = SubResource("RectangleShape2D_mnjld")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_leg2t")
-
-[node name="Middle" type="Sprite2D" parent="Sprite2D"]
-visible = false
-texture = ExtResource("3_m6d51")
 
 [node name="CollisionSoon" type="Area2D" parent="."]
 position = Vector2(70, 0)
@@ -39,6 +108,22 @@ position = Vector2(-70, 0)
 
 [node name="CollisionLate" type="CollisionShape2D" parent="CollisionLate"]
 shape = SubResource("RectangleShape2D_lripu")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_hcc0u")
+
+[node name="AnimationContainer" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimationContainer"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_1c0mk")
+}
+
+[node name="Sound" type="AnimationPlayer" parent="AnimationContainer"]
+libraries = {
+"": SubResource("AnimationLibrary_gg8hj")
+}
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

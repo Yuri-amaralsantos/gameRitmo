@@ -38,9 +38,9 @@ func _process(delta: float) -> void:
 	wrong_key_pressed()
 	wrong_note_finder()
 
+
 func wrong_key_pressed() -> void:
 	if GameManager.combo_activated == true and wrong_note_finded == true:
-		print(internotes_name[0])
 		if Input.is_action_just_pressed(internotes_name[0]):
 			on_combo_failed()
 	
@@ -88,7 +88,7 @@ func reset_combo() -> void:
 	GameManager.combo_activated = false
 	
 func active_combo() -> void:
-	if combo_cooldown.value >= GameManager.combo_cooldown_max_value and Input.is_action_just_pressed("Combo") and GameManager.combo_is_possible:
+	if combo_cooldown.value >= GameManager.combo_cooldown_max_value and Input.is_action_just_pressed("Combo") and GameManager.combo_is_possible == true and GameManager.combo_activated == false:
 		add_new_internotes()
 		GameManager.combo_activated = true
 	

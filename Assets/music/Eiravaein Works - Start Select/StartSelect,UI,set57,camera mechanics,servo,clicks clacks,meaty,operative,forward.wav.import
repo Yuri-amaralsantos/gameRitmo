@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://k53udqsqndm3"
+path="res://.godot/imported/StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav-bfbb522c854794db50397bbd8b57ccff.sample"
+
+[deps]
+
+source_file="res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav"
+dest_files=["res://.godot/imported/StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav-bfbb522c854794db50397bbd8b57ccff.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
