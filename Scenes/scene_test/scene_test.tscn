@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scenes/scene_test/scene_test.gd" id="1_hu4i4"]
 [ext_resource type="Texture2D" uid="uid://utt35feqk3qb" path="res://Assets/Background/fundo.png" id="2_7a3yx"]
 [ext_resource type="PackedScene" uid="uid://dbkmju2eb7jj4" path="res://Scenes/character/character.tscn" id="3_3nwar"]
-[ext_resource type="PackedScene" uid="uid://b572r5ogjp4eh" path="res://Scenes/note_area/note_area.tscn" id="3_m5afr"]
 [ext_resource type="PackedScene" uid="uid://bx4d6qgheb0w3" path="res://Scenes/score/score.tscn" id="4_eh1wr"]
+[ext_resource type="PackedScene" uid="uid://bixw4ftugu6gr" path="res://Scenes/note_system/note_system.tscn" id="4_uva6u"]
 [ext_resource type="PackedScene" uid="uid://cushr7vcbodso" path="res://Scenes/combo/combo.tscn" id="5_ky5dw"]
 [ext_resource type="PackedScene" uid="uid://bngjqd5pyjvdg" path="res://Scenes/speed_notes/speed_notes.tscn" id="7_f4wyi"]
 [ext_resource type="PackedScene" uid="uid://b8pb4sxol0pqb" path="res://Scenes/consecutive_hits/consecutive_hits.tscn" id="8_nrmr4"]
@@ -73,17 +73,8 @@ centered = false
 [node name="Character" parent="." instance=ExtResource("3_3nwar")]
 position = Vector2(576, 324)
 
-[node name="NoteArea" parent="." instance=ExtResource("3_m5afr")]
-position = Vector2(178, 420)
-
-[node name="MarkerNoteArea" type="Marker2D" parent="."]
-position = Vector2(1220, 420)
-
-[node name="TimerNote" type="Timer" parent="."]
-wait_time = 1.5
-autostart = true
-
-[node name="NoteContainer" type="Node2D" parent="."]
+[node name="NoteSystem" parent="." instance=ExtResource("4_uva6u")]
+position = Vector2(180, 430)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -145,5 +136,3 @@ libraries = {
 position = Vector2(-50, 324)
 
 [node name="NotesSoundEffects" parent="." instance=ExtResource("10_icgbu")]
-
-[connection signal="timeout" from="TimerNote" to="." method="_on_timer_note_timeout"]

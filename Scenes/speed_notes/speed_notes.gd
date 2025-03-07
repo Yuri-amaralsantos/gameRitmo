@@ -2,6 +2,7 @@ extends Control
 
 @onready var texture_progress_bar: TextureProgressBar = $MarginContainer/TextureProgressBar
 @onready var timer: Timer = $Timer
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var speed_note_activated: bool = false
 
@@ -21,6 +22,7 @@ func activate_speed_notes() -> void:
 			speed_note_activated = true
 			SignalManager.on_speed_changed.emit()
 			SignalManager.on_audio_play.emit("activation")
+			animation_player.play("ready")
 			GameManager.note_speed += GameManager.note_speed * GameManager.note_speed_multiplier
 			timer.start()
 
@@ -35,3 +37,4 @@ func _on_timer_timeout() -> void:
 func _on_texture_progress_bar_value_changed(value: float) -> void:
 	if value >= GameManager.speed_notes_cooldown_max_value:
 		SignalManager.on_audio_play.emit("ready_to_use")
+		animation_player.play("ready")

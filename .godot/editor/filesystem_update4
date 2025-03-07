@@ -7,5 +7,14 @@ res://Scenes/speed_notes/speed_notes.tscn
 res://Scenes/character/character.tscn
 res://Scenes/consecutive_hits/consecutive_hits.tscn
 res://Scenes/notes_sound_effects/notes_sound_effects.tscn
-res://Scenes/scene_test/scene_test.gd
 res://Scenes/note/note_1.tscn
+res://Scenes/combo/combo.gd
+res://Scenes/speed_notes/speed_notes.gd
+res://Scenes/test/parallax_2d.tscn
+res://Scenes/test/camera_2d.gd
+res://Scenes/test/background.tscn
+res://Scenes/note_area/note_area.gd
+res://Scenes/scene_test/scene_test.gd
+res://Scenes/note_system/note_system.tscn
+res://Scenes/note_system/note_system.gd
+res://Scenes/note_off_screen/note_off_screen.tscn

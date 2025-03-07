@@ -4,3 +4,6 @@
 
 [resource]
 font = ExtResource("1_yb2sq")
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(-3, 2)

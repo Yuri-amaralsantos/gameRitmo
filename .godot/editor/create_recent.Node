@@ -1,7 +1,10 @@
+Sprite2D
+Camera2D
+Parallax2D
+AnimationPlayer
 AudioStreamPlayer
 Node
 Node2D
-AnimationPlayer
 AudioStreamPlayer2D
 Label
 CollisionShape2D
@@ -9,6 +12,3 @@ Area2D
 Marker2D
 VBoxContainer
 HBoxContainer
-MarginContainer
-Control
-Camera2D

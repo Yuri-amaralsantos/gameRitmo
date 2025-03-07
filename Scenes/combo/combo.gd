@@ -3,6 +3,7 @@ extends Control
 @onready var note_1: Node2D = $MarginContainer/Internotes/Internote1/Note1
 @onready var note_2: Node2D = $MarginContainer/Internotes/Internote2/Note2
 @onready var note_3: Node2D = $MarginContainer/Internotes/Internote3/Note3
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var internotes_added: bool = false
 
@@ -90,6 +91,7 @@ func reset_combo() -> void:
 func active_combo() -> void:
 	if combo_cooldown.value >= GameManager.combo_cooldown_max_value and Input.is_action_just_pressed("Combo") and GameManager.combo_is_possible == true and GameManager.combo_activated == false:
 		add_new_internotes()
+		animation_player.play("ready")
 		SignalManager.on_audio_play.emit("activation")
 		GameManager.combo_activated = true
 	
@@ -158,3 +160,5 @@ func _on_note_3_child_entered_tree(node: Node) -> void:
 func _on_combo_cooldown_value_changed(value: float) -> void:
 	if value >= GameManager.combo_cooldown_max_value:
 		SignalManager.on_audio_play.emit("ready_to_use")
+		animation_player.play("ready")
+		

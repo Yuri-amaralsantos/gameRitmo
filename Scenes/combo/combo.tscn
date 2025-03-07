@@ -1,9 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://cushr7vcbodso"]
+[gd_scene load_steps=7 format=3 uid="uid://cushr7vcbodso"]
 
 [ext_resource type="Script" path="res://Scenes/combo/combo.gd" id="1_nhv6v"]
 [ext_resource type="Texture2D" uid="uid://iifc46i8kr1f" path="res://Assets/note_container/combo_sprite_vazio.png" id="2_30qnx"]
 [ext_resource type="Texture2D" uid="uid://c6cmpfry72msy" path="res://Assets/note_container/combo_sprite_cheio.png" id="3_g4dpl"]
 [ext_resource type="LabelSettings" uid="uid://tmu14jo4nq46" path="res://Scenes/combo/px_font_16.tres" id="4_lujdv"]
+
+[sub_resource type="Animation" id="Animation_wywar"]
+resource_name = "ready"
+length = 0.2
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ocl6x"]
+_data = {
+"ready": SubResource("Animation_wywar")
+}
 
 [node name="Combo" type="Control"]
 layout_mode = 3
@@ -74,6 +96,11 @@ text = "Espaço"
 label_settings = ExtResource("4_lujdv")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ocl6x")
+}
 
 [connection signal="value_changed" from="MarginContainer/Cooldown/ComboCooldown" to="." method="_on_combo_cooldown_value_changed"]
 [connection signal="child_entered_tree" from="MarginContainer/Internotes/Internote1/Note1" to="." method="_on_note_1_child_entered_tree"]
