@@ -1,102 +1,116 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741295456
-::res://Assets/::1741273886
-::res://Assets/Background/::1741252128
-fundo.png::CompressedTexture2D::1444205258807758753::1741252120::1741252128::1::::<><>::
-sprite.jpg::CompressedTexture2D::7947802482099102712::1741028504::1741199555::1::::<><>::
-::res://Assets/music/::1741277143
-mixkit-bonus-earned-in-video-game-2058.wav::AudioStreamWAV::4921567778223485116::1741275245::1741275254::1::::<><>::
-mixkit-correct-answer-notification-947.wav::AudioStreamWAV::4781195491337205052::1741273647::1741273888::1::::<><>::
-mixkit-correct-answer-tone-2870.wav::AudioStreamWAV::7381744437634464015::1741273669::1741273888::1::::<><>::
-mixkit-game-bonus-reached-2065.wav::AudioStreamWAV::8427583142137411887::1741276946::1741276957::1::::<><>::
-mixkit-short-bass-hit-2299.wav::AudioStreamWAV::2994287441758503142::1741273758::1741273888::1::::<><>::
-mixkit-tech-break-fail-2947.wav::AudioStreamWAV::5514003327760300485::1741277085::1741277143::1::::<><>::
-::res://Assets/music/Eiravaein Works - Start Select/::1741273889
-StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav::AudioStreamWAV::7800336594921549627::1425405729::1741273889::1::::<><>::
-StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav::AudioStreamWAV::4210632379089019467::1425405852::1741273889::1::::<><>::
-StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav::AudioStreamWAV::6359855766678370877::1425405770::1741273889::1::::<><>::
-StartSelect,UI,set17,schick,mechanical,percussive,ding,shudder,holdrelease.wav::AudioStreamWAV::930540278707954990::1425405782::1741273889::1::::<><>::
-StartSelect,UI,set34,mechanical,subtle,percussive,thick,bright,holdrelease.wav::AudioStreamWAV::7347197998674324548::1425405866::1741273888::1::::<><>::
-StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav::AudioStreamWAV::765555743804330984::1425405923::1741273888::1::::<><>::
-StartSelect,UI,set93,talking tones,bright percussion,playful,toonish,light ambience,select.wav::AudioStreamWAV::3442946282406713528::1425405972::1741273889::1::::<><>::
-StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav::AudioStreamWAV::3598687748284148722::1425405743::1741273888::1::::<><>::
-::res://Assets/note_container/::1741252127
-area_acerto.png::CompressedTexture2D::3669986342170444101::1741252120::1741252127::1::::<><>::
-batidas.png::CompressedTexture2D::8806821529566500956::1741199493::1741199555::1::::<><>::
-combo_blokecd_texture.png::CompressedTexture2D::4718238625648614864::1741116631::1741199555::1::::<><>::
-combo_sprite_cheio.png::CompressedTexture2D::6953579956507811012::1741252120::1741252127::1::::<><>::
-combo_sprite_vazio.png::CompressedTexture2D::578334499162466525::1741252120::1741252127::1::::<><>::
-cooldown_background_temp.png::CompressedTexture2D::2421230816187798770::1741115726::1741199555::1::::<><>::
-cooldown_loading_temp.png::CompressedTexture2D::6892806127189363189::1741115713::1741199555::1::::<><>::
-cooldown_speed_background_temp.png::CompressedTexture2D::6587883087045817046::1741205213::1741205257::1::::<><>::
-cooldown_speed_loading_temp.png::CompressedTexture2D::4529653886119434251::1741205255::1741205257::1::::<><>::
-goth_idle.png::CompressedTexture2D::4932592104010560212::1741252120::1741252127::1::::<><>::
-goth_pose_1.png::CompressedTexture2D::4187991021171022507::1741252120::1741252127::1::::<><>::
-goth_pose_2.png::CompressedTexture2D::2816696457310306725::1741252120::1741252127::1::::<><>::
-goth_pose_3.png::CompressedTexture2D::7349423310640903101::1741252120::1741252127::1::::<><>::
-goth_pose_4.png::CompressedTexture2D::7475368236611706386::1741252120::1741252127::1::::<><>::
-gotica_combo_1.png::CompressedTexture2D::1876743558819348956::1741252120::1741252127::1::::<><>::
-internote_sprite_temp.png::CompressedTexture2D::3458608215803845604::1741034558::1741199555::1::::<><>::
-note_contaiter_middle_temp.png::CompressedTexture2D::6335419858074416373::1741028504::1741199555::1::::<><>::
-note_contaiter_temp.png::CompressedTexture2D::8402245749968802509::1741028504::1741199555::1::::<><>::
-note_sprite_temp.png::CompressedTexture2D::1700155661124074768::1741028504::1741199555::1::::<><>::
-pose_1.png::CompressedTexture2D::8927452842211702748::1741201108::1741201109::1::::<><>::
-pose_2.png::CompressedTexture2D::8435974630795149940::1741201129::1741201132::1::::<><>::
-pose_3.png::CompressedTexture2D::6698905938286691191::1741201139::1741201142::1::::<><>::
-pose_4.png::CompressedTexture2D::6241896620614501658::1741201151::1741201155::1::::<><>::
-pose_default.png::CompressedTexture2D::7319332376847874576::1741204772::1741201185::1::::<><>::
-pose_wrong.png::CompressedTexture2D::2368058336507759996::1741204783::1741204792::1::::<><>::
-Retro Gaming.ttf::FontFile::6650248313430612726::1741199493::1741199555::1::::<><>::
-::res://Autoloads/::1741276299
-game_manager.gd::GDScript::-1::1741276299::0::1::::<>Node<>::
-scene_manager.gd::GDScript::-1::1741252138::0::1::::<>Node<>::
-score_manager.gd::GDScript::-1::1741266125::0::1::::<>Node<>::
-signal_manager.gd::GDScript::-1::1741252613::0::1::::<>Node<>::
-::res://Scenes/::1741265397
-::res://Scenes/character/::1741290825
-character.gd::GDScript::-1::1741263411::0::1::::<>Node2D<>::
-character.tscn::PackedScene::7250840440677343555::1741290825::0::1::::<><>::res://Scenes/character/character.gd<>uid://ccjncoocrf3g7::::res://Assets/note_container/goth_idle.png
-::res://Scenes/combo/::1741290825
-combo.gd::GDScript::-1::1741290787::0::1::::<>Control<>::
-combo.tscn::PackedScene::6214234130446533118::1741290825::0::1::::<><>::res://Scenes/combo/combo.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres
-px_font_16.tres::LabelSettings::1359622870423963249::1741287684::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-::res://Scenes/consecutive_hits/::1741290825
-consecutive_hits.gd::GDScript::-1::1741265974::0::1::::<>Control<>::
-consecutive_hits.tscn::PackedScene::4733731676677675093::1741290825::0::1::::<><>::uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres<>res://Scenes/consecutive_hits/consecutive_hits.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
-::res://Scenes/internote/::1741290824
-internote.gd::GDScript::-1::1741288823::0::1::::Internote<>Area2D<>::
-internote.tscn::PackedScene::3402266134432737298::1741290824::0::1::::<><>::res://Scenes/internote/internote.gd<>uid://bpjm1io5qmo5q::::res://Assets/note_container/internote_sprite_temp.png
-internote_1.tscn::PackedScene::7121408118008150243::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_2.tscn::PackedScene::5895036703776200948::1741256841::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_3.tscn::PackedScene::2433296009506660921::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_4.tscn::PackedScene::8467276633856594691::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-::res://Scenes/mainMenu/::1741199691
-faseMenu.tscn::PackedScene::7774609245893225911::1741199691::0::1::::<><>::res://Scenes/mainMenu/fase_menu.gd
-fase_menu.gd::GDScript::-1::1741199628::0::1::::<>Control<>::
-mainMenu.gd::GDScript::-1::1741199593::0::1::::<>Control<>::
-mainMenu.tscn::PackedScene::959532108884540224::1741199691::0::1::::<><>::res://Scenes/mainMenu/mainMenu.gd
-settingsMenu.tscn::PackedScene::8048673114363206423::1741114239::0::1::::<><>::res://Scenes/mainMenu/settings_menu.gd
-settings_menu.gd::GDScript::-1::1741199594::0::1::::<>Control<>::
-::res://Scenes/note/::1741290825
-note.gd::GDScript::-1::1741274104::0::1::::Note<>Area2D<>::
-note.tscn::PackedScene::1621857423373082740::1741290825::0::1::::<><>::res://Scenes/note/note.gd<>uid://yhtkysiaw6oi::::res://Assets/note_container/note_sprite_temp.png
-note_1.tscn::PackedScene::52072270550390734::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-note_2.tscn::PackedScene::3058011324581859019::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-note_3.tscn::PackedScene::3486325672813392201::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-note_4.tscn::PackedScene::382009807403567363::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-::res://Scenes/note_area/::1741290824
-note_area.gd::GDScript::-1::1741274859::0::1::::<>Area2D<>::
-note_area.tscn::PackedScene::4559817395878092107::1741290824::0::1::::<><>::res://Scenes/note_area/note_area.gd<>uid://bsj1eyr50dgaf::::res://Assets/note_container/area_acerto.png<>uid://ddf1it1ngi7cl::::res://Assets/music/mixkit-correct-answer-tone-2870.wav<>uid://brjh4j3apqcwo::::res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav
-::res://Scenes/note_off_screen/::1741290825
-note_off_screen.gd::GDScript::-1::1741274966::0::1::::<>Area2D<>::
-note_off_screen.tscn::PackedScene::6590605108152836981::1741290825::0::1::::<><>::res://Scenes/note_off_screen/note_off_screen.gd<>uid://brjh4j3apqcwo::::res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav
-::res://Scenes/scene_test/::1741290935
-scene_test.gd::GDScript::-1::1741252138::0::1::::<>Node2D<>::
-scene_test.tscn::PackedScene::4309174872571799738::1741290935::0::1::::<><>::res://Scenes/scene_test/scene_test.gd<>uid://utt35feqk3qb::::res://Assets/Background/fundo.png<>uid://dbkmju2eb7jj4::::res://Scenes/character/character.tscn<>uid://b572r5ogjp4eh::::res://Scenes/note_area/note_area.tscn<>uid://bx4d6qgheb0w3::::res://Scenes/score/score.tscn<>uid://cushr7vcbodso::::res://Scenes/combo/combo.tscn<>uid://bngjqd5pyjvdg::::res://Scenes/speed_notes/speed_notes.tscn<>uid://b8pb4sxol0pqb::::res://Scenes/consecutive_hits/consecutive_hits.tscn<>uid://c05skkshuk75j::::res://Scenes/note_off_screen/note_off_screen.tscn
-::res://Scenes/score/::1741287871
-px_font_24.tres::LabelSettings::6466023467865768314::1741287684::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-score.gd::GDScript::-1::1741287871::0::1::::<>Control<>::
-score.tscn::PackedScene::4060869402790821652::1741263524::0::1::::<><>::res://Scenes/score/score.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
-::res://Scenes/speed_notes/::1741290825
-speed_notes.gd::GDScript::-1::1741279837::0::1::::<>Control<>::
-speed_notes.tscn::PackedScene::3311837147777421672::1741290825::0::1::::<><>::res://Scenes/speed_notes/speed_notes.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+::res://::1741350214
+::res://Assets/::1741350111
+::res://Assets/Background/::1741350213
+fundo.png::CompressedTexture2D::1444205258807758753::1741216992::1741350213::1::::<><>::
+sprite.jpg::CompressedTexture2D::7947802482099102712::1740938812::1741350213::1::::<><>::
+::res://Assets/music/::1741350543
+mixkit-bonus-earned-in-video-game-2058.wav::AudioStreamWAV::4921567778223485116::1741350111::1741350213::1::::<><>::
+mixkit-correct-answer-notification-947.wav::AudioStreamWAV::4781195491337205052::1741350111::1741350213::1::::<><>::
+mixkit-correct-answer-tone-2870.wav::AudioStreamWAV::7381744437634464015::1741350111::1741350213::1::::<><>::
+mixkit-game-bonus-reached-2065.wav::AudioStreamWAV::8427583142137411887::1741350111::1741350213::1::::<><>::
+mixkit-short-bass-hit-2299.wav::AudioStreamWAV::2994287441758503142::1741350111::1741350213::1::::<><>::
+mixkit-tech-break-fail-2947.wav::AudioStreamWAV::5514003327760300485::1741350111::1741350213::1::::<><>::
+::res://Assets/music/Eiravaein Works - Start Select/::1741350214
+StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav::AudioStreamWAV::7800336594921549627::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav::AudioStreamWAV::4210632379089019467::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav::AudioStreamWAV::6359855766678370877::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set17,schick,mechanical,percussive,ding,shudder,holdrelease.wav::AudioStreamWAV::930540278707954990::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set34,mechanical,subtle,percussive,thick,bright,holdrelease.wav::AudioStreamWAV::7347197998674324548::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav::AudioStreamWAV::765555743804330984::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set93,talking tones,bright percussion,playful,toonish,light ambience,select.wav::AudioStreamWAV::3442946282406713528::1741350111::1741350214::1::::<><>::
+StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav::AudioStreamWAV::3598687748284148722::1741350111::1741350213::1::::<><>::
+::res://Assets/music/SoundEffects/::1741351347
+8-bit-blast-63035.mp3::AudioStreamMP3::7166254468599817434::1741350552::1741350552::1::::<><>::
+applause-2-31567.mp3::AudioStreamMP3::5512719767208861960::1741350552::1741350552::1::::<><>::
+applause-75314.mp3::AudioStreamMP3::5256245091075032992::1741350552::1741350552::1::::<><>::
+carnival-ambiance-oeteldonk-holland-outdoor-01-19575.mp3::AudioStreamMP3::7326413196107618659::1741350552::1741350552::1::::<><>::
+fireworkblast-106275.mp3::AudioStreamMP3::2347861508036234455::1741350552::1741350552::1::::<><>::
+pandeiro-96295 (mp3cut.net).mp3::AudioStreamMP3::5908019432750503670::1741350934::1741350934::1::::<><>::
+pandeiro-96295.mp3::AudioStreamMP3::4297783724663463294::1741350911::1741351357::1::::<><>::
+paper-explosion-84987.mp3::AudioStreamMP3::4548507348992976730::1741350552::1741350552::1::::<><>::
+tischbombe_1-103163 (mp3cut.net).mp3::AudioStreamMP3::2561127040588491226::1741351343::1741351343::1::::<><>::
+tischbombe_1-103163.mp3::AudioStreamMP3::8836275414042783753::1741350552::1741350553::1::::<><>::
+::res://Assets/note_container/::1741350213
+area_acerto.png::CompressedTexture2D::3669986342170444101::1741218079::1741350213::1::::<><>::
+batidas.png::CompressedTexture2D::8806821529566500956::1741132922::1741350213::1::::<><>::
+combo_blokecd_texture.png::CompressedTexture2D::4718238625648614864::1741132077::1741350213::1::::<><>::
+combo_sprite_cheio.png::CompressedTexture2D::6953579956507811012::1741219394::1741350213::1::::<><>::
+combo_sprite_vazio.png::CompressedTexture2D::578334499162466525::1741219391::1741350213::1::::<><>::
+cooldown_background_temp.png::CompressedTexture2D::2421230816187798770::1741132077::1741350212::1::::<><>::
+cooldown_loading_temp.png::CompressedTexture2D::6892806127189363189::1741132077::1741350212::1::::<><>::
+cooldown_speed_background_temp.png::CompressedTexture2D::6587883087045817046::1741214137::1741350212::1::::<><>::
+cooldown_speed_loading_temp.png::CompressedTexture2D::4529653886119434251::1741214137::1741350212::1::::<><>::
+goth_idle.png::CompressedTexture2D::4932592104010560212::1741217366::1741350212::1::::<><>::
+goth_pose_1.png::CompressedTexture2D::4187991021171022507::1741217229::1741350212::1::::<><>::
+goth_pose_2.png::CompressedTexture2D::2816696457310306725::1741217229::1741350212::1::::<><>::
+goth_pose_3.png::CompressedTexture2D::7349423310640903101::1741217229::1741350212::1::::<><>::
+goth_pose_4.png::CompressedTexture2D::7475368236611706386::1741217229::1741350212::1::::<><>::
+gotica_combo_1.png::CompressedTexture2D::1876743558819348956::1741217229::1741350213::1::::<><>::
+internote_sprite_temp.png::CompressedTexture2D::3458608215803845604::1741045510::1741350212::1::::<><>::
+note_contaiter_middle_temp.png::CompressedTexture2D::6335419858074416373::1740938812::1741350213::1::::<><>::
+note_contaiter_temp.png::CompressedTexture2D::8402245749968802509::1740938812::1741350213::1::::<><>::
+note_sprite_temp.png::CompressedTexture2D::1700155661124074768::1740938812::1741350213::1::::<><>::
+pose_1.png::CompressedTexture2D::8927452842211702748::1741214137::1741350213::1::::<><>::
+pose_2.png::CompressedTexture2D::8435974630795149940::1741214137::1741350213::1::::<><>::
+pose_3.png::CompressedTexture2D::6698905938286691191::1741214137::1741350213::1::::<><>::
+pose_4.png::CompressedTexture2D::6241896620614501658::1741214137::1741350213::1::::<><>::
+pose_default.png::CompressedTexture2D::7319332376847874576::1741214137::1741350213::1::::<><>::
+pose_wrong.png::CompressedTexture2D::2368058336507759996::1741214137::1741350213::1::::<><>::
+Retro Gaming.ttf::FontFile::6650248313430612726::1741133708::1741350212::1::::<><>::
+::res://Autoloads/::1741350111
+game_manager.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+scene_manager.gd::GDScript::-1::1740938812::0::1::::<>Node<>::
+score_manager.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+signal_manager.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+::res://Scenes/::1741350111
+::res://Scenes/character/::1741351158
+character.gd::GDScript::-1::1741350111::0::1::::<>Node2D<>::
+character.tscn::PackedScene::7250840440677343555::1741351158::0::1::::<><>::res://Scenes/character/character.gd<>uid://ccjncoocrf3g7::::res://Assets/note_container/goth_idle.png
+::res://Scenes/combo/::1741351158
+combo.gd::GDScript::-1::1741350111::0::1::::<>Control<>::
+combo.tscn::PackedScene::6214234130446533118::1741351158::0::1::::<><>::res://Scenes/combo/combo.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres
+px_font_16.tres::LabelSettings::1359622870423963249::1741350227::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+::res://Scenes/consecutive_hits/::1741351159
+consecutive_hits.gd::GDScript::-1::1741350111::0::1::::<>Control<>::
+consecutive_hits.tscn::PackedScene::4733731676677675093::1741351159::0::1::::<><>::uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres<>res://Scenes/consecutive_hits/consecutive_hits.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
+::res://Scenes/internote/::1741350111
+internote.gd::GDScript::-1::1741350111::0::1::::Internote<>Area2D<>::
+internote.tscn::PackedScene::3402266134432737298::1741350111::0::1::::<><>::res://Scenes/internote/internote.gd<>uid://bpjm1io5qmo5q::::res://Assets/note_container/internote_sprite_temp.png
+internote_1.tscn::PackedScene::7121408118008150243::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_2.tscn::PackedScene::5895036703776200948::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_3.tscn::PackedScene::2433296009506660921::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_4.tscn::PackedScene::8467276633856594691::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+::res://Scenes/mainMenu/::1741214137
+faseMenu.tscn::PackedScene::7774609245893225911::1741214137::0::1::::<><>::res://Scenes/mainMenu/fase_menu.gd
+fase_menu.gd::GDScript::-1::1741214137::0::1::::<>Control<>::
+mainMenu.gd::GDScript::-1::1741214137::0::1::::<>Control<>::
+mainMenu.tscn::PackedScene::959532108884540224::1741214137::0::1::::<><>::res://Scenes/mainMenu/mainMenu.gd
+settingsMenu.tscn::PackedScene::8048673114363206423::1741132074::0::1::::<><>::res://Scenes/mainMenu/settings_menu.gd
+settings_menu.gd::GDScript::-1::1741132077::0::1::::<>Control<>::
+::res://Scenes/note/::1741351159
+note.gd::GDScript::-1::1741132077::0::1::::Note<>Area2D<>::
+note.tscn::PackedScene::1621857423373082740::1741220588::0::1::::<><>::res://Scenes/note/note.gd<>uid://yhtkysiaw6oi::::res://Assets/note_container/note_sprite_temp.png
+note_1.tscn::PackedScene::52072270550390734::1741351159::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+note_2.tscn::PackedScene::3058011324581859019::1741350111::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
+note_3.tscn::PackedScene::3486325672813392201::1741350111::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
+note_4.tscn::PackedScene::382009807403567363::1741350111::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
+::res://Scenes/notes_sound_effects/::1741351159
+notes_sound_effects.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+notes_sound_effects.tscn::PackedScene::5727407612364689939::1741351159::0::1::::<><>::res://Scenes/notes_sound_effects/notes_sound_effects.gd<>uid://brjh4j3apqcwo::::res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav<>uid://cqf5hmypgcr4i::::res://Assets/music/SoundEffects/pandeiro-96295 (mp3cut.net).mp3<>uid://ccebrcuyq51c7::::res://Assets/music/mixkit-bonus-earned-in-video-game-2058.wav<>uid://ckta3gs72r8lt::::res://Assets/music/mixkit-tech-break-fail-2947.wav<>uid://dscnce5y7ws28::::res://Assets/music/mixkit-game-bonus-reached-2065.wav<>uid://biwpqhcass2cg::::res://Assets/music/mixkit-short-bass-hit-2299.wav
+::res://Scenes/note_area/::1741351158
+note_area.gd::GDScript::-1::1741350111::0::1::::<>Area2D<>::
+note_area.tscn::PackedScene::4559817395878092107::1741351158::0::1::::<><>::res://Scenes/note_area/note_area.gd<>uid://bsj1eyr50dgaf::::res://Assets/note_container/area_acerto.png
+::res://Scenes/note_off_screen/::1741350111
+note_off_screen.gd::GDScript::-1::1741350111::0::1::::<>Area2D<>::
+note_off_screen.tscn::PackedScene::6590605108152836981::1741350111::0::1::::<><>::res://Scenes/note_off_screen/note_off_screen.gd
+::res://Scenes/scene_test/::1741351158
+scene_test.gd::GDScript::-1::1741351045::0::1::::<>Node2D<>::
+scene_test.tscn::PackedScene::4309174872571799738::1741351158::0::1::::<><>::res://Scenes/scene_test/scene_test.gd<>uid://utt35feqk3qb::::res://Assets/Background/fundo.png<>uid://dbkmju2eb7jj4::::res://Scenes/character/character.tscn<>uid://b572r5ogjp4eh::::res://Scenes/note_area/note_area.tscn<>uid://bx4d6qgheb0w3::::res://Scenes/score/score.tscn<>uid://cushr7vcbodso::::res://Scenes/combo/combo.tscn<>uid://bngjqd5pyjvdg::::res://Scenes/speed_notes/speed_notes.tscn<>uid://b8pb4sxol0pqb::::res://Scenes/consecutive_hits/consecutive_hits.tscn<>uid://c05skkshuk75j::::res://Scenes/note_off_screen/note_off_screen.tscn<>uid://cnunti8j31iad::::res://Scenes/notes_sound_effects/notes_sound_effects.tscn
+::res://Scenes/score/::1741350227
+px_font_24.tres::LabelSettings::6466023467865768314::1741350227::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+score.gd::GDScript::-1::1741350111::0::1::::<>Control<>::
+score.tscn::PackedScene::4060869402790821652::1741350111::0::1::::<><>::res://Scenes/score/score.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
+::res://Scenes/speed_notes/::1741351158
+speed_notes.gd::GDScript::-1::1741350111::0::1::::<>Control<>::
+speed_notes.tscn::PackedScene::3311837147777421672::1741351158::0::1::::<><>::res://Scenes/speed_notes/speed_notes.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf

@@ -11,7 +11,7 @@ const NOTE_4: PackedScene = preload("res://Scenes/note/note_4.tscn")
 @onready var timer_note: Timer = $TimerNote
 @onready var faseAnim = $AnimationPlayer
 
-var timer_note_default: float = 2.5
+var timer_note_default: float = 2.2
 var timer_note_faster: float = 1.0
 
 func _ready() -> void:
