@@ -1,69 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://b2nnqlso52w8i"]
+[gd_scene load_steps=8 format=3 uid="uid://b2nnqlso52w8i"]
 
-[ext_resource type="Script" path="res://Scenes/scene_test/scene_test.gd" id="1_hu4i4"]
 [ext_resource type="Texture2D" uid="uid://utt35feqk3qb" path="res://Assets/Background/fundo.png" id="2_7a3yx"]
 [ext_resource type="PackedScene" uid="uid://dbkmju2eb7jj4" path="res://Scenes/character/character.tscn" id="3_3nwar"]
-[ext_resource type="PackedScene" uid="uid://bx4d6qgheb0w3" path="res://Scenes/score/score.tscn" id="4_eh1wr"]
 [ext_resource type="PackedScene" uid="uid://bixw4ftugu6gr" path="res://Scenes/note_system/note_system.tscn" id="4_uva6u"]
-[ext_resource type="PackedScene" uid="uid://cushr7vcbodso" path="res://Scenes/combo/combo.tscn" id="5_ky5dw"]
-[ext_resource type="PackedScene" uid="uid://bngjqd5pyjvdg" path="res://Scenes/speed_notes/speed_notes.tscn" id="7_f4wyi"]
-[ext_resource type="PackedScene" uid="uid://b8pb4sxol0pqb" path="res://Scenes/consecutive_hits/consecutive_hits.tscn" id="8_nrmr4"]
+[ext_resource type="PackedScene" uid="uid://cwqeolsd8vspr" path="res://Scenes/hud/hud.tscn" id="6_1gwq3"]
 [ext_resource type="PackedScene" uid="uid://c05skkshuk75j" path="res://Scenes/note_off_screen/note_off_screen.tscn" id="9_u3jqo"]
 [ext_resource type="PackedScene" uid="uid://cnunti8j31iad" path="res://Scenes/notes_sound_effects/notes_sound_effects.tscn" id="10_icgbu"]
-
-[sub_resource type="Animation" id="Animation_ljmqf"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Start"]
-}
-
-[sub_resource type="Animation" id="Animation_nddd4"]
-resource_name = "phase"
-length = 90.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5, 88.4333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": ["Inicio", "", "Final"]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("..")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(90.1333),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"end_phase"
-}]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_3j3hs"]
-_data = {
-"RESET": SubResource("Animation_ljmqf"),
-"phase": SubResource("Animation_nddd4")
-}
+[ext_resource type="PackedScene" uid="uid://cyfxsxyyp5equ" path="res://Scenes/music_system/music_system.tscn" id="11_v68o8"]
 
 [node name="SceneTest" type="Node2D"]
-script = ExtResource("1_hu4i4")
 
 [node name="BG" type="Sprite2D" parent="."]
 position = Vector2(-49, -515)
@@ -76,63 +21,11 @@ position = Vector2(576, 324)
 [node name="NoteSystem" parent="." instance=ExtResource("4_uva6u")]
 position = Vector2(180, 430)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Specials" type="HBoxContainer" parent="CanvasLayer"]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -2.0
-offset_right = 2.0
-grow_horizontal = 2
-grow_vertical = 0
-size_flags_vertical = 8
-theme_override_constants/separation = 300
-
-[node name="Combo" parent="CanvasLayer/Specials" instance=ExtResource("5_ky5dw")]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-
-[node name="SpeedNotes" parent="CanvasLayer/Specials" instance=ExtResource("7_f4wyi")]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-
-[node name="Score" parent="CanvasLayer" instance=ExtResource("4_eh1wr")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
-
-[node name="ConsecutiveHits" parent="CanvasLayer" instance=ExtResource("8_nrmr4")]
-
-[node name="Label" type="Label" parent="CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -117.5
-offset_top = -68.5
-offset_right = 117.5
-offset_bottom = 68.5
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 100
-text = "Start"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../CanvasLayer/Label")
-libraries = {
-"": SubResource("AnimationLibrary_3j3hs")
-}
+[node name="Hud" parent="." instance=ExtResource("6_1gwq3")]
 
 [node name="NoteOffScreen" parent="." instance=ExtResource("9_u3jqo")]
 position = Vector2(-50, 324)
 
 [node name="NotesSoundEffects" parent="." instance=ExtResource("10_icgbu")]
+
+[node name="MusicSystem" parent="." instance=ExtResource("11_v68o8")]

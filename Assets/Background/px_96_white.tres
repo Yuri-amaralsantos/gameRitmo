@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bdh0eu8tnbdwe"]
+
+[ext_resource type="FontFile" uid="uid://c10ovase8076a" path="res://Assets/note_container/Retro Gaming.ttf" id="1_xh6lw"]
+
+[resource]
+font = ExtResource("1_xh6lw")
+font_size = 96
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(-3, 2)

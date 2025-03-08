@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://crrlujl0fnwk4"]
+
+[ext_resource type="PackedScene" uid="uid://b2nnqlso52w8i" path="res://Scenes/scene_test/scene_test.tscn" id="1_uqwim"]
+
+[node name="Phase3" instance=ExtResource("1_uqwim")]
+
+[node name="MusicSystem" parent="." index="6"]
+phase = "phase3"

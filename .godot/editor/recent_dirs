@@ -1,3 +1,8 @@
+res://Scenes/scene_test
+res://Scenes/hud
+res://Scenes/music_system
+res://Assets/Background
+res://Scenes/mainMenu
 res://Scenes/note_system
 res://Scenes/notes_sound_effects
 res://Scenes/note_off_screen
@@ -5,7 +10,6 @@ res://Scenes/score
 res://Scenes/combo
 res://Scenes/consecutive_hits
 res://Scenes/speed_notes
-res://Scenes/scene_test
 res://Scenes/character
 res://Scenes/internote
 res://scenes/scene_test

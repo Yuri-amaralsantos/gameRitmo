@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uetba58ue6qq"
+path="res://.godot/imported/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3-8506f9b8d98341135990bc813d632d27.mp3str"
+
+[deps]
+
+source_file="res://Assets/phase/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3"
+dest_files=["res://.godot/imported/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3-8506f9b8d98341135990bc813d632d27.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
