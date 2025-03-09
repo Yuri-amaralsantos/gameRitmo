@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://buek4vbpdeq50"]
+
+[ext_resource type="Script" path="res://Scenes/rank/rank.gd" id="1_wyo57"]
+[ext_resource type="Texture2D" uid="uid://cdccyatkik82l" path="res://Assets/note_container/fundo menu.png" id="2_m0057"]
+[ext_resource type="LabelSettings" uid="uid://tmu14jo4nq46" path="res://Scenes/combo/px_font_16.tres" id="3_oklpi"]
+[ext_resource type="LabelSettings" uid="uid://cyegpx4j48xda" path="res://Scenes/score/px_font_24.tres" id="4_2u0tn"]
+[ext_resource type="LabelSettings" uid="uid://bdh0eu8tnbdwe" path="res://Assets/Background/px_96_white.tres" id="5_2tk22"]
+
+[node name="Rank" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wyo57")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0.705882)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_m0057")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 54
+theme_override_constants/margin_top = 54
+theme_override_constants/margin_right = 54
+theme_override_constants/margin_bottom = 54
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Press ESC To Return"
+label_settings = ExtResource("3_oklpi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "SCORE: "
+label_settings = ExtResource("4_2u0tn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "S"
+label_settings = ExtResource("5_2tk22")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,18 +1,20 @@
 extends Node2D
 
-@onready var faseAnim = $AnimationPlayer
 
 func _ready() -> void:
-	faseAnim.play("phase")
+	SignalManager.on_music_ended.connect(on_music_ended)
+
 
 func _process(delta: float) -> void:
-	pass
+	return_to_menu()
 		
-func end_phase():
-	print("Phase ended")
-	print(GameManager.faseAtual == GameManager.faseUnlocked)
-	if GameManager.faseAtual == GameManager.faseUnlocked and ScoreManager.current_score > 5:
-		GameManager.faseUnlocked+=1
-	print(GameManager.faseUnlocked)
-	get_tree().change_scene_to_file("res://Scenes/mainMenu/mainMenu.tscn")
+func return_to_menu() -> void:
+	if Input.is_action_just_pressed("ReturnToMenu"):
+		SceneManager.return_to_main_menu()
 	
+	
+func on_music_ended() -> void:
+	pass
+
+func stop_game_end() -> void:
+	pass

@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://b2nnqlso52w8i"]
+[gd_scene load_steps=9 format=3 uid="uid://b2nnqlso52w8i"]
 
+[ext_resource type="Script" path="res://Scenes/scene_test/scene_test.gd" id="1_7ok8o"]
 [ext_resource type="Texture2D" uid="uid://utt35feqk3qb" path="res://Assets/Background/fundo.png" id="2_7a3yx"]
 [ext_resource type="PackedScene" uid="uid://dbkmju2eb7jj4" path="res://Scenes/character/character.tscn" id="3_3nwar"]
 [ext_resource type="PackedScene" uid="uid://bixw4ftugu6gr" path="res://Scenes/note_system/note_system.tscn" id="4_uva6u"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cyfxsxyyp5equ" path="res://Scenes/music_system/music_system.tscn" id="11_v68o8"]
 
 [node name="SceneTest" type="Node2D"]
+script = ExtResource("1_7ok8o")
 
 [node name="BG" type="Sprite2D" parent="."]
 position = Vector2(-49, -515)

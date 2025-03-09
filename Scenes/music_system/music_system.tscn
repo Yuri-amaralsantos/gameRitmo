@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://cyfxsxyyp5equ"]
+[gd_scene load_steps=11 format=3 uid="uid://cyfxsxyyp5equ"]
 
 [ext_resource type="AudioStream" uid="uid://uetba58ue6qq" path="res://Assets/phase/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3" id="1_lgdxy"]
 [ext_resource type="Script" path="res://Scenes/music_system/music_system.gd" id="1_xlw86"]
 [ext_resource type="LabelSettings" uid="uid://bdh0eu8tnbdwe" path="res://Assets/Background/px_96_white.tres" id="2_hhm3q"]
 [ext_resource type="AudioStream" uid="uid://casdciw2r0mpo" path="res://Assets/phase/País Tropical 8 Bit [8-BIT BRASIL] [ ezmp3.cc ].mp3" id="3_xsbts"]
+[ext_resource type="PackedScene" uid="uid://buek4vbpdeq50" path="res://Scenes/rank/rank.tscn" id="5_tggb6"]
 
 [sub_resource type="Animation" id="Animation_pa0qu"]
 resource_name = "phase1"
@@ -16,7 +17,7 @@ tracks/0/path = NodePath("Label:text")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 182.7),
+"times": PackedFloat32Array(0.1, 182.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": ["Start", "End"]
@@ -28,7 +29,7 @@ tracks/1/path = NodePath("Label:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 182.7, 182.9),
+"times": PackedFloat32Array(0.1, 0.3, 182.7, 182.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [true, false, true, false]
@@ -40,7 +41,7 @@ tracks/2/path = NodePath("AudioStreamPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.1),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("1_lgdxy")]
@@ -52,36 +53,36 @@ tracks/3/path = NodePath("AudioStreamPlayer:playing")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(-3.7),
+"times": PackedFloat32Array(0.1),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
 }
-tracks/4/type = "method"
+tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("PhaseAnim")
+tracks/4/path = NodePath("Label:self_modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 182.7, 182.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
 "times": PackedFloat32Array(182.9),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
-"method": &"end_phase"
+"method": &"music_ended"
 }]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Label:self_modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.2, 182.7, 182.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ggxdi"]
@@ -95,7 +96,7 @@ tracks/0/path = NodePath("Label:text")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 117.9),
+"times": PackedFloat32Array(0.1, 117.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": ["Start", "End"]
@@ -107,7 +108,7 @@ tracks/1/path = NodePath("Label:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 117.9, 118.1),
+"times": PackedFloat32Array(0.1, 0.3, 117.9, 118.1),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [true, false, true, false]
@@ -119,7 +120,7 @@ tracks/2/path = NodePath("AudioStreamPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.1),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("3_xsbts")]
@@ -131,36 +132,36 @@ tracks/3/path = NodePath("AudioStreamPlayer:playing")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.1),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
 }
-tracks/4/type = "method"
+tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("PhaseAnim")
+tracks/4/path = NodePath("Label:self_modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 117.9, 118),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
 "times": PackedFloat32Array(118.1),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
-"method": &"end_phase"
+"method": &"music_ended"
 }]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Label:self_modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.2, 117.9, 118),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ngtdb"]
@@ -289,7 +290,7 @@ tracks/3/path = NodePath("AudioStreamPlayer:playing")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.1),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -336,7 +337,6 @@ script = ExtResource("1_xlw86")
 libraries = {
 "": SubResource("AnimationLibrary_0utpa")
 }
-autoplay = "phase1"
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 8
@@ -356,4 +356,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("1_lgdxy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Rank" parent="CanvasLayer" instance=ExtResource("5_tggb6")]
+visible = false

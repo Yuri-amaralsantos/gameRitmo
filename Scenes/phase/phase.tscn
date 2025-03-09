@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=3 uid="uid://cl8ghyh8werst"]
+
+[ext_resource type="Script" path="res://Scenes/phase/phase.gd" id="1_47su3"]
+[ext_resource type="Texture2D" uid="uid://ch60goki733iq" path="res://Assets/note_container/phase_bg_placeholder.png" id="2_imquw"]
+[ext_resource type="FontFile" uid="uid://c10ovase8076a" path="res://Assets/note_container/Retro Gaming.ttf" id="3_yoang"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6iq0u"]
+font = ExtResource("3_yoang")
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(-3, 2)
+
+[sub_resource type="Animation" id="Animation_gs2fm"]
+resource_name = "on_mouse_entered"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05)]
+}
+
+[sub_resource type="Animation" id="Animation_rx31w"]
+resource_name = "on_mouse_exited"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2b1p3"]
+_data = {
+"on_mouse_entered": SubResource("Animation_gs2fm"),
+"on_mouse_exited": SubResource("Animation_rx31w")
+}
+
+[node name="Phase" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(1.05, 1.05)
+script = ExtResource("1_47su3")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_imquw")
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -22.5
+offset_right = 54.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "PHASE {}"
+label_settings = SubResource("LabelSettings_6iq0u")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2b1p3")
+}
+
+[connection signal="button_down" from="TextureButton" to="." method="_on_texture_button_button_down"]
+[connection signal="mouse_entered" from="TextureButton" to="." method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton" to="." method="_on_texture_button_mouse_exited"]

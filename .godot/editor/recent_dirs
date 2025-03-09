@@ -1,3 +1,8 @@
+res://Scenes/simple_transition
+res://Scenes/rank
+res://Scenes/main_menu
+res://Scenes/phase
+res://Scenes/phase_selector
 res://Scenes/scene_test
 res://Scenes/hud
 res://Scenes/music_system
@@ -15,8 +20,4 @@ res://Scenes/internote
 res://scenes/scene_test
 res://scenes/note_area
 res://Scenes/note
-res://Scenes/note_area
-res://autoloads
-res://Scenes
-res://
 C:/Users/w10/Documents/projects/meu/cardGodot

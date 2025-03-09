@@ -9,3 +9,5 @@ signal on_speed_changed
 signal on_speed_default
 signal on_combo_cleared
 signal on_audio_play(note: String)
+signal on_change_to_phase(phase: int)
+signal on_music_ended

@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://c044qfp6lo17g"]
+
+[ext_resource type="Script" path="res://Scenes/phase_selector/phase_selector.gd" id="1_55hsd"]
+[ext_resource type="Texture2D" uid="uid://cdccyatkik82l" path="res://Assets/note_container/fundo menu.png" id="1_qiy4u"]
+[ext_resource type="PackedScene" uid="uid://cl8ghyh8werst" path="res://Scenes/phase/phase.tscn" id="2_uciy6"]
+
+[node name="PhaseSelector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_55hsd")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qiy4u")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 240
+
+[node name="Phase1" parent="HBoxContainer" instance=ExtResource("2_uciy6")]
+layout_mode = 2
+phase = 1
+label_text = "PHASE 1"
+
+[node name="Phase2" parent="HBoxContainer" instance=ExtResource("2_uciy6")]
+layout_mode = 2
+phase = 2
+label_text = "PHASE 2"

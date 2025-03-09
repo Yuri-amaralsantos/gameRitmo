@@ -9,6 +9,7 @@ const NOTE_4: PackedScene = preload("res://Scenes/note/note_4.tscn")
 @onready var note_container: Node2D = $NoteContainer
 @onready var marker_note_area: Marker2D = $MarkerNoteArea
 @onready var timer_note: Timer = $TimerNote
+@onready var note_area: Area2D = $NoteArea
 
 var timer_note_default: float = 2.2
 var timer_note_faster: float = 1.0
@@ -16,6 +17,7 @@ var timer_note_faster: float = 1.0
 func _ready() -> void:
 	SignalManager.on_speed_changed.connect(on_speed_changed)
 	SignalManager.on_speed_default.connect(on_speed_default)
+	SignalManager.on_music_ended.connect(on_music_ended)
 	timer_note.wait_time = timer_note_default
 	instantiate_new_note(notes.pick_random())
 
@@ -35,6 +37,11 @@ func instantiate_new_note(note: PackedScene) -> void:
 
 func _on_timer_note_timeout() -> void:
 	instantiate_new_note(notes.pick_random())
+	
+func on_music_ended() -> void:
+	timer_note.stop()
+	note_area.set_process(false)
+	note_container.queue_free()
 	
 func on_speed_changed() -> void:
 	timer_note.wait_time = timer_note_faster
