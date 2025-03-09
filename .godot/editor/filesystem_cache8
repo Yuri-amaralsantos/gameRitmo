@@ -1,127 +1,134 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741465077
-::res://Assets/::1741459335
-::res://Assets/Background/::1741462070
-fundo.png::CompressedTexture2D::1444205258807758753::1741252120::1741375472::1::::<><>::
-px_96_white.tres::LabelSettings::2612964029206635380::1741462070::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-sprite.jpg::CompressedTexture2D::7947802482099102712::1741028504::1741375472::1::::<><>::
-::res://Assets/music/::1741375472
-mixkit-bonus-earned-in-video-game-2058.wav::AudioStreamWAV::4921567778223485116::1741275245::1741375472::1::::<><>::
-mixkit-correct-answer-notification-947.wav::AudioStreamWAV::4781195491337205052::1741273647::1741375472::1::::<><>::
-mixkit-correct-answer-tone-2870.wav::AudioStreamWAV::7381744437634464015::1741273669::1741375472::1::::<><>::
-mixkit-game-bonus-reached-2065.wav::AudioStreamWAV::8427583142137411887::1741276946::1741375472::1::::<><>::
-mixkit-short-bass-hit-2299.wav::AudioStreamWAV::2994287441758503142::1741273758::1741375472::1::::<><>::
-mixkit-tech-break-fail-2947.wav::AudioStreamWAV::5514003327760300485::1741277085::1741375472::1::::<><>::
-::res://Assets/music/Eiravaein Works - Start Select/::1741375472
-StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav::AudioStreamWAV::7800336594921549627::1425405729::1741375472::1::::<><>::
-StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav::AudioStreamWAV::4210632379089019467::1425405852::1741375472::1::::<><>::
-StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav::AudioStreamWAV::6359855766678370877::1425405770::1741375472::1::::<><>::
-StartSelect,UI,set17,schick,mechanical,percussive,ding,shudder,holdrelease.wav::AudioStreamWAV::930540278707954990::1425405782::1741375472::1::::<><>::
-StartSelect,UI,set34,mechanical,subtle,percussive,thick,bright,holdrelease.wav::AudioStreamWAV::7347197998674324548::1425405866::1741375472::1::::<><>::
-StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav::AudioStreamWAV::765555743804330984::1425405923::1741375472::1::::<><>::
-StartSelect,UI,set93,talking tones,bright percussion,playful,toonish,light ambience,select.wav::AudioStreamWAV::3442946282406713528::1425405972::1741375472::1::::<><>::
-StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav::AudioStreamWAV::3598687748284148722::1425405743::1741375472::1::::<><>::
-::res://Assets/music/SoundEffects/::1741375471
-8-bit-blast-63035.mp3::AudioStreamMP3::7166254468599817434::1741375450::1741375471::1::::<><>::
-applause-2-31567.mp3::AudioStreamMP3::5512719767208861960::1741375450::1741375471::1::::<><>::
-applause-75314.mp3::AudioStreamMP3::5256245091075032992::1741375450::1741375471::1::::<><>::
-carnival-ambiance-oeteldonk-holland-outdoor-01-19575.mp3::AudioStreamMP3::7326413196107618659::1741375450::1741375471::1::::<><>::
-fireworkblast-106275.mp3::AudioStreamMP3::2347861508036234455::1741375450::1741375471::1::::<><>::
-pandeiro-96295 (mp3cut.net).mp3::AudioStreamMP3::5908019432750503670::1741375450::1741375471::1::::<><>::
-pandeiro-96295.mp3::AudioStreamMP3::4297783724663463294::1741375450::1741375471::1::::<><>::
-paper-explosion-84987.mp3::AudioStreamMP3::4548507348992976730::1741375450::1741375471::1::::<><>::
-tischbombe_1-103163 (mp3cut.net).mp3::AudioStreamMP3::2561127040588491226::1741375450::1741375471::1::::<><>::
-::res://Assets/note_container/::1741375472
-area_acerto.png::CompressedTexture2D::3669986342170444101::1741252120::1741375472::1::::<><>::
-batidas.png::CompressedTexture2D::8806821529566500956::1741199493::1741375472::1::::<><>::
-combo_blokecd_texture.png::CompressedTexture2D::4718238625648614864::1741116631::1741375472::1::::<><>::
-combo_sprite_cheio.png::CompressedTexture2D::6953579956507811012::1741252120::1741375472::1::::<><>::
-combo_sprite_vazio.png::CompressedTexture2D::578334499162466525::1741252120::1741375472::1::::<><>::
-cooldown_background_temp.png::CompressedTexture2D::2421230816187798770::1741115726::1741375471::1::::<><>::
-cooldown_loading_temp.png::CompressedTexture2D::6892806127189363189::1741115713::1741375471::1::::<><>::
-cooldown_speed_background_temp.png::CompressedTexture2D::6587883087045817046::1741205213::1741375471::1::::<><>::
-cooldown_speed_loading_temp.png::CompressedTexture2D::4529653886119434251::1741205255::1741375471::1::::<><>::
-goth_idle.png::CompressedTexture2D::4932592104010560212::1741252120::1741375471::1::::<><>::
-goth_pose_1.png::CompressedTexture2D::4187991021171022507::1741252120::1741375471::1::::<><>::
-goth_pose_2.png::CompressedTexture2D::2816696457310306725::1741252120::1741375471::1::::<><>::
-goth_pose_3.png::CompressedTexture2D::7349423310640903101::1741252120::1741375471::1::::<><>::
-goth_pose_4.png::CompressedTexture2D::7475368236611706386::1741252120::1741375471::1::::<><>::
-gotica_combo_1.png::CompressedTexture2D::1876743558819348956::1741252120::1741375471::1::::<><>::
-internote_sprite_temp.png::CompressedTexture2D::3458608215803845604::1741034558::1741375471::1::::<><>::
-note_contaiter_middle_temp.png::CompressedTexture2D::6335419858074416373::1741028504::1741375471::1::::<><>::
-note_contaiter_temp.png::CompressedTexture2D::8402245749968802509::1741028504::1741375471::1::::<><>::
-note_sprite_temp.png::CompressedTexture2D::1700155661124074768::1741028504::1741375471::1::::<><>::
-pose_1.png::CompressedTexture2D::8927452842211702748::1741201108::1741375471::1::::<><>::
-pose_2.png::CompressedTexture2D::8435974630795149940::1741201129::1741375471::1::::<><>::
-pose_3.png::CompressedTexture2D::6698905938286691191::1741201139::1741375471::1::::<><>::
-pose_4.png::CompressedTexture2D::6241896620614501658::1741201151::1741375471::1::::<><>::
-pose_default.png::CompressedTexture2D::7319332376847874576::1741204772::1741375471::1::::<><>::
-pose_wrong.png::CompressedTexture2D::2368058336507759996::1741204783::1741375471::1::::<><>::
-Retro Gaming.ttf::FontFile::6650248313430612726::1741199493::1741375471::1::::<><>::
-::res://Assets/phase/::1741459338
-País Tropical 8 Bit [8-BIT BRASIL] [ ezmp3.cc ].mp3::AudioStreamMP3::4810186344948356724::1741459260::1741459338::1::::<><>::
-Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3::AudioStreamMP3::1413189840303776300::1741459257::1741459338::1::::<><>::
-::res://Autoloads/::1741296302
-game_manager.gd::GDScript::-1::1741276299::0::1::::<>Node<>::
-scene_manager.gd::GDScript::-1::1741252138::0::1::::<>Node<>::
-score_manager.gd::GDScript::-1::1741266125::0::1::::<>Node<>::
-signal_manager.gd::GDScript::-1::1741296302::0::1::::<>Node<>::
-::res://Scenes/::1741464744
-::res://Scenes/character/::1741460140
-character.gd::GDScript::-1::1741263411::0::1::::<>Node2D<>::
-character.tscn::PackedScene::7250840440677343555::1741460140::0::1::::<><>::res://Scenes/character/character.gd<>uid://ccjncoocrf3g7::::res://Assets/note_container/goth_idle.png
-::res://Scenes/combo/::1741461709
-combo.gd::GDScript::-1::1741377111::0::1::::<>Control<>::
-combo.tscn::PackedScene::6214234130446533118::1741460139::0::1::::<><>::res://Scenes/combo/combo.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres
-px_font_16.tres::LabelSettings::1359622870423963249::1741461709::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-::res://Scenes/consecutive_hits/::1741460140
-consecutive_hits.gd::GDScript::-1::1741265974::0::1::::<>Control<>::
-consecutive_hits.tscn::PackedScene::4733731676677675093::1741460140::0::1::::<><>::uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres<>res://Scenes/consecutive_hits/consecutive_hits.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
-::res://Scenes/hud/::1741464508
-hud.tscn::PackedScene::6350294446318188527::1741464508::0::1::::<><>::uid://cushr7vcbodso::::res://Scenes/combo/combo.tscn<>uid://bngjqd5pyjvdg::::res://Scenes/speed_notes/speed_notes.tscn<>uid://bx4d6qgheb0w3::::res://Scenes/score/score.tscn<>uid://b8pb4sxol0pqb::::res://Scenes/consecutive_hits/consecutive_hits.tscn
-::res://Scenes/internote/::1741298112
-internote.gd::GDScript::-1::1741288823::0::1::::Internote<>Area2D<>::
-internote.tscn::PackedScene::3402266134432737298::1741298112::0::1::::<><>::res://Scenes/internote/internote.gd<>uid://bpjm1io5qmo5q::::res://Assets/note_container/internote_sprite_temp.png
-internote_1.tscn::PackedScene::7121408118008150243::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_2.tscn::PackedScene::5895036703776200948::1741256841::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_3.tscn::PackedScene::2433296009506660921::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-internote_4.tscn::PackedScene::8467276633856594691::1741256527::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-::res://Scenes/mainMenu/::1741199691
-faseMenu.tscn::PackedScene::7774609245893225911::1741199691::0::1::::<><>::res://Scenes/mainMenu/fase_menu.gd
-fase_menu.gd::GDScript::-1::1741199628::0::1::::<>Control<>::
-mainMenu.gd::GDScript::-1::1741199593::0::1::::<>Control<>::
-mainMenu.tscn::PackedScene::959532108884540224::1741199691::0::1::::<><>::res://Scenes/mainMenu/mainMenu.gd
-settingsMenu.tscn::PackedScene::8048673114363206423::1741114239::0::1::::<><>::res://Scenes/mainMenu/settings_menu.gd
-settings_menu.gd::GDScript::-1::1741199594::0::1::::<>Control<>::
-::res://Scenes/music_system/::1741465062
-music_system.gd::GDScript::-1::1741464944::0::1::::<>AnimationPlayer<>::
-music_system.tscn::PackedScene::6469125384817233828::1741465062::0::1::::<><>::uid://uetba58ue6qq::::res://Assets/phase/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3<>res://Scenes/music_system/music_system.gd<>uid://bdh0eu8tnbdwe::::res://Assets/Background/px_96_white.tres
-::res://Scenes/note/::1741460140
-note.gd::GDScript::-1::1741274104::0::1::::Note<>Area2D<>::
-note.tscn::PackedScene::1621857423373082740::1741298058::0::1::::<><>::res://Scenes/note/note.gd<>uid://yhtkysiaw6oi::::res://Assets/note_container/note_sprite_temp.png
-note_1.tscn::PackedScene::52072270550390734::1741460140::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
-note_2.tscn::PackedScene::3058011324581859019::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-note_3.tscn::PackedScene::3486325672813392201::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-note_4.tscn::PackedScene::382009807403567363::1741274047::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
-::res://Scenes/notes_sound_effects/::1741460140
-notes_sound_effects.gd::GDScript::-1::1741296951::0::1::::<>Node<>::
-notes_sound_effects.tscn::PackedScene::5727407612364689939::1741460140::0::1::::<><>::res://Scenes/notes_sound_effects/notes_sound_effects.gd<>uid://brjh4j3apqcwo::::res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav<>uid://cqf5hmypgcr4i::::res://Assets/music/SoundEffects/pandeiro-96295 (mp3cut.net).mp3<>uid://bcqvngy00utuw::::res://Assets/music/SoundEffects/tischbombe_1-103163 (mp3cut.net).mp3<>uid://ckta3gs72r8lt::::res://Assets/music/mixkit-tech-break-fail-2947.wav<>uid://b52lisywyjfne::::res://Assets/music/SoundEffects/paper-explosion-84987.mp3<>uid://biwpqhcass2cg::::res://Assets/music/mixkit-short-bass-hit-2299.wav
-::res://Scenes/note_area/::1741460139
-note_area.gd::GDScript::-1::1741378109::0::1::::<>Area2D<>::
-note_area.tscn::PackedScene::4559817395878092107::1741460139::0::1::::<><>::res://Scenes/note_area/note_area.gd<>uid://bsj1eyr50dgaf::::res://Assets/note_container/area_acerto.png
-::res://Scenes/note_off_screen/::1741460140
-note_off_screen.gd::GDScript::-1::1741297052::0::1::::<>Area2D<>::
-note_off_screen.tscn::PackedScene::6590605108152836981::1741460140::0::1::::<><>::res://Scenes/note_off_screen/note_off_screen.gd
-::res://Scenes/note_system/::1741460140
-note_system.gd::GDScript::-1::1741379319::0::1::::<>Node2D<>::
-note_system.tscn::PackedScene::2996799975890422425::1741460140::0::1::::<><>::res://Scenes/note_system/note_system.gd<>uid://b572r5ogjp4eh::::res://Scenes/note_area/note_area.tscn
-::res://Scenes/scene_test/::1741465031
-scene_test.gd::GDScript::-1::1741378861::0::1::::<>Node2D<>::
-scene_test.tscn::PackedScene::4309174872571799738::1741465031::0::1::::<><>::uid://utt35feqk3qb::::res://Assets/Background/fundo.png<>uid://dbkmju2eb7jj4::::res://Scenes/character/character.tscn<>uid://bixw4ftugu6gr::::res://Scenes/note_system/note_system.tscn<>uid://cwqeolsd8vspr::::res://Scenes/hud/hud.tscn<>uid://c05skkshuk75j::::res://Scenes/note_off_screen/note_off_screen.tscn<>uid://cnunti8j31iad::::res://Scenes/notes_sound_effects/notes_sound_effects.tscn<>uid://cyfxsxyyp5equ::::res://Scenes/music_system/music_system.tscn
-::res://Scenes/score/::1741461709
-px_font_24.tres::LabelSettings::6466023467865768314::1741461709::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
-score.gd::GDScript::-1::1741287871::0::1::::<>Control<>::
-score.tscn::PackedScene::4060869402790821652::1741263524::0::1::::<><>::res://Scenes/score/score.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
-::res://Scenes/speed_notes/::1741460139
-speed_notes.gd::GDScript::-1::1741377192::0::1::::<>Control<>::
-speed_notes.tscn::PackedScene::3311837147777421672::1741460139::0::1::::<><>::res://Scenes/speed_notes/speed_notes.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+::res://::1741546006
+::res://Assets/::1741546006
+::res://Assets/Background/::1741530889
+fundo.png::CompressedTexture2D::1444205258807758753::1741216992::1741490179::1::::<><>::
+px_96_white.tres::LabelSettings::2612964029206635380::1741530889::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+sprite.jpg::CompressedTexture2D::7947802482099102712::1740938812::1741490178::1::::<><>::
+::res://Assets/music/::1741490179
+mixkit-bonus-earned-in-video-game-2058.wav::AudioStreamWAV::4921567778223485116::1741350111::1741490179::1::::<><>::
+mixkit-correct-answer-notification-947.wav::AudioStreamWAV::4781195491337205052::1741350111::1741490179::1::::<><>::
+mixkit-correct-answer-tone-2870.wav::AudioStreamWAV::7381744437634464015::1741350111::1741490179::1::::<><>::
+mixkit-game-bonus-reached-2065.wav::AudioStreamWAV::8427583142137411887::1741350111::1741490179::1::::<><>::
+mixkit-short-bass-hit-2299.wav::AudioStreamWAV::2994287441758503142::1741350111::1741490179::1::::<><>::
+mixkit-tech-break-fail-2947.wav::AudioStreamWAV::5514003327760300485::1741350111::1741490179::1::::<><>::
+::res://Assets/music/Eiravaein Works - Start Select/::1741490180
+StartSelect,UI,set1,strings,ethnic,tonal,plucked,aura,hold_release.wav::AudioStreamWAV::7800336594921549627::1741350111::1741490180::1::::<><>::
+StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav::AudioStreamWAV::4210632379089019467::1741350111::1741490180::1::::<><>::
+StartSelect,UI,set16,frequency shaping,zippy,robotic,evolving,dense,deaction.wav::AudioStreamWAV::6359855766678370877::1741350111::1741490180::1::::<><>::
+StartSelect,UI,set17,schick,mechanical,percussive,ding,shudder,holdrelease.wav::AudioStreamWAV::930540278707954990::1741350111::1741490180::1::::<><>::
+StartSelect,UI,set34,mechanical,subtle,percussive,thick,bright,holdrelease.wav::AudioStreamWAV::7347197998674324548::1741350111::1741490179::1::::<><>::
+StartSelect,UI,set57,camera mechanics,servo,clicks clacks,meaty,operative,forward.wav::AudioStreamWAV::765555743804330984::1741350111::1741490179::1::::<><>::
+StartSelect,UI,set93,talking tones,bright percussion,playful,toonish,light ambience,select.wav::AudioStreamWAV::3442946282406713528::1741350111::1741490179::1::::<><>::
+StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav::AudioStreamWAV::3598687748284148722::1741350111::1741490179::1::::<><>::
+::res://Assets/music/SoundEffects/::1741490177
+8-bit-blast-63035.mp3::AudioStreamMP3::7166254468599817434::1741350552::1741490177::1::::<><>::
+applause-2-31567.mp3::AudioStreamMP3::5512719767208861960::1741350552::1741490177::1::::<><>::
+applause-75314.mp3::AudioStreamMP3::5256245091075032992::1741350552::1741490177::1::::<><>::
+carnival-ambiance-oeteldonk-holland-outdoor-01-19575.mp3::AudioStreamMP3::7326413196107618659::1741350552::1741490177::1::::<><>::
+fireworkblast-106275.mp3::AudioStreamMP3::2347861508036234455::1741350552::1741490177::1::::<><>::
+pandeiro-96295 (mp3cut.net).mp3::AudioStreamMP3::5908019432750503670::1741350934::1741490177::1::::<><>::
+pandeiro-96295.mp3::AudioStreamMP3::4297783724663463294::1741350911::1741490177::1::::<><>::
+paper-explosion-84987.mp3::AudioStreamMP3::4548507348992976730::1741350552::1741490177::1::::<><>::
+tischbombe_1-103163 (mp3cut.net).mp3::AudioStreamMP3::2561127040588491226::1741351343::1741490177::1::::<><>::
+::res://Assets/note_container/::1741546098
+area_acerto.png::CompressedTexture2D::3669986342170444101::1741218079::1741490179::1::::<><>::
+batidas.png::CompressedTexture2D::8806821529566500956::1741132922::1741490179::1::::<><>::
+botao jogar.png::CompressedTexture2D::3994013693999763368::1741546098::1741546099::1::::<><>::
+combo_blokecd_texture.png::CompressedTexture2D::4718238625648614864::1741132077::1741490179::1::::<><>::
+combo_sprite_cheio.png::CompressedTexture2D::6953579956507811012::1741219394::1741490179::1::::<><>::
+combo_sprite_vazio.png::CompressedTexture2D::578334499162466525::1741219391::1741490179::1::::<><>::
+cooldown_background_temp.png::CompressedTexture2D::2421230816187798770::1741132077::1741490179::1::::<><>::
+cooldown_loading_temp.png::CompressedTexture2D::6892806127189363189::1741132077::1741490178::1::::<><>::
+cooldown_speed_background_temp.png::CompressedTexture2D::6587883087045817046::1741214137::1741490178::1::::<><>::
+cooldown_speed_loading_temp.png::CompressedTexture2D::4529653886119434251::1741214137::1741490178::1::::<><>::
+fundo menu.png::CompressedTexture2D::4987700976664430197::1741545646::1741545659::1::::<><>::
+goth_idle.png::CompressedTexture2D::4932592104010560212::1741490096::1741490178::1::::<><>::
+goth_pose_1.png::CompressedTexture2D::4187991021171022507::1741217229::1741490178::1::::<><>::
+goth_pose_2.png::CompressedTexture2D::2816696457310306725::1741217229::1741490178::1::::<><>::
+goth_pose_3.png::CompressedTexture2D::7349423310640903101::1741217229::1741490178::1::::<><>::
+goth_pose_4.png::CompressedTexture2D::7475368236611706386::1741217229::1741490178::1::::<><>::
+gotica_combo_1.png::CompressedTexture2D::1876743558819348956::1741490575::1741490576::1::::<><>::
+internote_sprite_temp.png::CompressedTexture2D::3458608215803845604::1741045510::1741490178::1::::<><>::
+note_contaiter_middle_temp.png::CompressedTexture2D::6335419858074416373::1740938812::1741490178::1::::<><>::
+note_contaiter_temp.png::CompressedTexture2D::8402245749968802509::1740938812::1741490178::1::::<><>::
+note_sprite_temp.png::CompressedTexture2D::1700155661124074768::1740938812::1741490178::1::::<><>::
+pose_1.png::CompressedTexture2D::8927452842211702748::1741214137::1741490178::1::::<><>::
+pose_2.png::CompressedTexture2D::8435974630795149940::1741214137::1741490178::1::::<><>::
+pose_3.png::CompressedTexture2D::6698905938286691191::1741214137::1741490178::1::::<><>::
+pose_4.png::CompressedTexture2D::6241896620614501658::1741214137::1741490178::1::::<><>::
+pose_default.png::CompressedTexture2D::7319332376847874576::1741214137::1741490178::1::::<><>::
+pose_wrong.png::CompressedTexture2D::2368058336507759996::1741214137::1741490178::1::::<><>::
+Retro Gaming.ttf::FontFile::6650248313430612726::1741133708::1741490177::1::::<><>::
+titulo.png::CompressedTexture2D::3664208397674331008::1741545992::1741546006::1::::<><>::
+::res://Assets/phase/::1741490178
+País Tropical 8 Bit [8-BIT BRASIL] [ ezmp3.cc ].mp3::AudioStreamMP3::4810186344948356724::1741490101::1741490178::1::::<><>::
+Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3::AudioStreamMP3::1413189840303776300::1741490101::1741490178::1::::<><>::
+::res://Autoloads/::1741350111
+game_manager.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+scene_manager.gd::GDScript::-1::1740938812::0::1::::<>Node<>::
+score_manager.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+signal_manager.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+::res://Scenes/::1741490101
+::res://Scenes/character/::1741544875
+character.gd::GDScript::-1::1741350111::0::1::::<>Node2D<>::
+character.tscn::PackedScene::7250840440677343555::1741544875::0::1::::<><>::res://Scenes/character/character.gd<>uid://ccjncoocrf3g7::::res://Assets/note_container/goth_idle.png
+::res://Scenes/combo/::1741544875
+combo.gd::GDScript::-1::1741390929::0::1::::<>Control<>::
+combo.tscn::PackedScene::6214234130446533118::1741544875::0::1::::<><>::res://Scenes/combo/combo.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres
+px_font_16.tres::LabelSettings::1359622870423963249::1741530888::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+::res://Scenes/consecutive_hits/::1741436956
+consecutive_hits.gd::GDScript::-1::1741350111::0::1::::<>Control<>::
+consecutive_hits.tscn::PackedScene::4733731676677675093::1741436956::0::1::::<><>::uid://tmu14jo4nq46::::res://Scenes/combo/px_font_16.tres<>res://Scenes/consecutive_hits/consecutive_hits.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
+::res://Scenes/hud/::1741544874
+hud.tscn::PackedScene::6350294446318188527::1741544874::0::1::::<><>::uid://cushr7vcbodso::::res://Scenes/combo/combo.tscn<>uid://bngjqd5pyjvdg::::res://Scenes/speed_notes/speed_notes.tscn<>uid://bx4d6qgheb0w3::::res://Scenes/score/score.tscn<>uid://b8pb4sxol0pqb::::res://Scenes/consecutive_hits/consecutive_hits.tscn
+::res://Scenes/internote/::1741350111
+internote.gd::GDScript::-1::1741350111::0::1::::Internote<>Area2D<>::
+internote.tscn::PackedScene::3402266134432737298::1741350111::0::1::::<><>::res://Scenes/internote/internote.gd<>uid://bpjm1io5qmo5q::::res://Assets/note_container/internote_sprite_temp.png
+internote_1.tscn::PackedScene::7121408118008150243::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_2.tscn::PackedScene::5895036703776200948::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_3.tscn::PackedScene::2433296009506660921::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+internote_4.tscn::PackedScene::8467276633856594691::1741133823::0::1::::<><>::uid://boqc3dbjcxfju::::res://Scenes/internote/internote.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+::res://Scenes/mainMenu/::1741545702
+faseMenu.tscn::PackedScene::7774609245893225911::1741544876::0::1::::<><>::res://Scenes/mainMenu/fase_menu.gd
+fase_menu.gd::GDScript::-1::1741530889::0::1::::<>Control<>::
+mainMenu.gd::GDScript::-1::1741214137::0::1::::<>Control<>::
+mainMenu.tscn::PackedScene::959532108884540224::1741545702::0::1::::<><>::res://Scenes/mainMenu/mainMenu.gd<>uid://cdccyatkik82l::::res://Assets/note_container/fundo menu.png
+settingsMenu.tscn::PackedScene::8048673114363206423::1741132074::0::1::::<><>::res://Scenes/mainMenu/settings_menu.gd
+settings_menu.gd::GDScript::-1::1741132077::0::1::::<>Control<>::
+::res://Scenes/music_system/::1741530948
+music_system.gd::GDScript::-1::1741490101::0::1::::<>Node2D<>::
+music_system.tscn::PackedScene::6469125384817233828::1741530948::0::1::::<><>::uid://uetba58ue6qq::::res://Assets/phase/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].mp3<>res://Scenes/music_system/music_system.gd<>uid://bdh0eu8tnbdwe::::res://Assets/Background/px_96_white.tres<>uid://casdciw2r0mpo::::res://Assets/phase/País Tropical 8 Bit [8-BIT BRASIL] [ ezmp3.cc ].mp3
+::res://Scenes/note/::1741436956
+note.gd::GDScript::-1::1741132077::0::1::::Note<>Area2D<>::
+note.tscn::PackedScene::1621857423373082740::1741220588::0::1::::<><>::res://Scenes/note/note.gd<>uid://yhtkysiaw6oi::::res://Assets/note_container/note_sprite_temp.png
+note_1.tscn::PackedScene::52072270550390734::1741436956::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png
+note_2.tscn::PackedScene::3058011324581859019::1741350111::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
+note_3.tscn::PackedScene::3486325672813392201::1741350111::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
+note_4.tscn::PackedScene::382009807403567363::1741350111::0::1::::<><>::uid://xdv0ws6i2gxw::::res://Scenes/note/note.tscn<>uid://dxqdcf4q3xrvw::::res://Assets/note_container/batidas.png<>uid://caebudotcqk5y::::res://Assets/music/mixkit-correct-answer-notification-947.wav
+::res://Scenes/notes_sound_effects/::1741436956
+notes_sound_effects.gd::GDScript::-1::1741350111::0::1::::<>Node<>::
+notes_sound_effects.tscn::PackedScene::5727407612364689939::1741436956::0::1::::<><>::res://Scenes/notes_sound_effects/notes_sound_effects.gd<>uid://brjh4j3apqcwo::::res://Assets/music/Eiravaein Works - Start Select/StartSelect,UI,set100,lady,vocalizations,crunchy,multipitched,multitimbral,back.wav<>uid://cqf5hmypgcr4i::::res://Assets/music/SoundEffects/pandeiro-96295 (mp3cut.net).mp3<>uid://bcqvngy00utuw::::res://Assets/music/SoundEffects/tischbombe_1-103163 (mp3cut.net).mp3<>uid://ckta3gs72r8lt::::res://Assets/music/mixkit-tech-break-fail-2947.wav<>uid://b52lisywyjfne::::res://Assets/music/SoundEffects/paper-explosion-84987.mp3<>uid://biwpqhcass2cg::::res://Assets/music/mixkit-short-bass-hit-2299.wav
+::res://Scenes/note_area/::1741490096
+note_area.gd::GDScript::-1::1741390929::0::1::::<>Area2D<>::
+note_area.tscn::PackedScene::4559817395878092107::1741490096::0::1::::<><>::res://Scenes/note_area/note_area.gd<>uid://bsj1eyr50dgaf::::res://Assets/note_container/area_acerto.png
+::res://Scenes/note_off_screen/::1741490096
+note_off_screen.gd::GDScript::-1::1741350111::0::1::::<>Area2D<>::
+note_off_screen.tscn::PackedScene::6590605108152836981::1741490096::0::1::::<><>::res://Scenes/note_off_screen/note_off_screen.gd
+::res://Scenes/note_system/::1741544874
+note_system.gd::GDScript::-1::1741390929::0::1::::<>Node2D<>::
+note_system.tscn::PackedScene::2996799975890422425::1741544874::0::1::::<><>::res://Scenes/note_system/note_system.gd<>uid://b572r5ogjp4eh::::res://Scenes/note_area/note_area.tscn
+::res://Scenes/scene_test/::1741544875
+phase_1.tscn::PackedScene::860922034331601251::1741544874::0::1::::<><>::uid://b2nnqlso52w8i::::res://Scenes/scene_test/scene_test.tscn
+phase_2.tscn::PackedScene::6738450867890449795::1741544875::0::1::::<><>::uid://b2nnqlso52w8i::::res://Scenes/scene_test/scene_test.tscn
+phase_3.tscn::PackedScene::6001850224696401761::1741544875::0::1::::<><>::uid://b2nnqlso52w8i::::res://Scenes/scene_test/scene_test.tscn
+phase_4.tscn::PackedScene::1527431653745433323::1741544875::0::1::::<><>::uid://b2nnqlso52w8i::::res://Scenes/scene_test/scene_test.tscn
+scene_test.gd::GDScript::-1::1741390929::0::1::::<>Node2D<>::
+scene_test.tscn::PackedScene::4309174872571799738::1741544874::0::1::::<><>::uid://utt35feqk3qb::::res://Assets/Background/fundo.png<>uid://dbkmju2eb7jj4::::res://Scenes/character/character.tscn<>uid://bixw4ftugu6gr::::res://Scenes/note_system/note_system.tscn<>uid://cwqeolsd8vspr::::res://Scenes/hud/hud.tscn<>uid://c05skkshuk75j::::res://Scenes/note_off_screen/note_off_screen.tscn<>uid://cnunti8j31iad::::res://Scenes/notes_sound_effects/notes_sound_effects.tscn<>uid://cyfxsxyyp5equ::::res://Scenes/music_system/music_system.tscn
+::res://Scenes/score/::1741530889
+px_font_24.tres::LabelSettings::6466023467865768314::1741530889::0::1::::<><>::uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf
+score.gd::GDScript::-1::1741350111::0::1::::<>Control<>::
+score.tscn::PackedScene::4060869402790821652::1741350111::0::1::::<><>::res://Scenes/score/score.gd<>uid://cyegpx4j48xda::::res://Scenes/score/px_font_24.tres
+::res://Scenes/speed_notes/::1741490096
+speed_notes.gd::GDScript::-1::1741390929::0::1::::<>Control<>::
+speed_notes.tscn::PackedScene::3311837147777421672::1741490096::0::1::::<><>::res://Scenes/speed_notes/speed_notes.gd<>uid://iifc46i8kr1f::::res://Assets/note_container/combo_sprite_vazio.png<>uid://c6cmpfry72msy::::res://Assets/note_container/combo_sprite_cheio.png<>uid://c10ovase8076a::::res://Assets/note_container/Retro Gaming.ttf

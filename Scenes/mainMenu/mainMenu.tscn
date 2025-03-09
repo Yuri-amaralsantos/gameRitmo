@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://nw2ma2vebcxc"]
+[gd_scene load_steps=5 format=3 uid="uid://nw2ma2vebcxc"]
 
 [ext_resource type="Script" path="res://Scenes/mainMenu/mainMenu.gd" id="1_noi4y"]
+[ext_resource type="Texture2D" uid="uid://cdccyatkik82l" path="res://Assets/note_container/fundo menu.png" id="2_1cdw7"]
+[ext_resource type="Texture2D" uid="uid://bw5y27iggbq3i" path="res://Assets/note_container/botao jogar.png" id="3_dwh5f"]
+[ext_resource type="Texture2D" uid="uid://bsg78hmrxq0h5" path="res://Assets/note_container/titulo.png" id="4_hdt5j"]
 
 [node name="mainMenu" type="Control"]
 layout_mode = 3
@@ -10,6 +13,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_noi4y")
+
+[node name="FundoMenu" type="Sprite2D" parent="."]
+position = Vector2(606, 296)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_1cdw7")
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 0
@@ -22,11 +30,6 @@ layout_mode = 2
 theme_override_constants/separation = 200
 alignment = 1
 
-[node name="Label" type="Label" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "RitmoGame"
-
 [node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 20
@@ -34,7 +37,8 @@ theme_override_constants/separation = 20
 [node name="start" type="Button" parent="BoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Iniciar"
+icon = ExtResource("3_dwh5f")
+flat = true
 
 [node name="settings" type="Button" parent="BoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -45,6 +49,11 @@ text = "Configurações"
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Sair"
+
+[node name="Titulo" type="Sprite2D" parent="."]
+position = Vector2(588, 129)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_hdt5j")
 
 [connection signal="pressed" from="BoxContainer/VBoxContainer/VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/VBoxContainer/settings" to="." method="_on_settings_pressed"]

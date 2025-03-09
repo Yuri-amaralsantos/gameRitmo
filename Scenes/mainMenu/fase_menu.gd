@@ -16,22 +16,22 @@ func _process(delta: float) -> void:
 
 func _on_fase_1_pressed() -> void:
 	GameManager.faseAtual = 1
-	get_tree().change_scene_to_file("res://Scenes/scene_test/scene_test.tscn")
+	get_tree().change_scene_to_file("res://Scenes/scene_test/phase_1.tscn")
 
 
 func _on_fase_2_pressed() -> void:
 	GameManager.faseAtual = 2
-	get_tree().change_scene_to_file("res://Scenes/scene_test/scene_test.tscn")
+	get_tree().change_scene_to_file("res://Scenes/scene_test/phase_2.tscn")
 
 
 func _on_fase_3_pressed() -> void:
 	GameManager.faseAtual = 3
-	get_tree().change_scene_to_file("res://Scenes/scene_test/scene_test.tscn")
+	get_tree().change_scene_to_file("res://Scenes/scene_test/phase_3.tscn")
 
 
 func _on_fase_4_pressed() -> void:
 	GameManager.faseAtual = 4
-	get_tree().change_scene_to_file("res://Scenes/scene_test/scene_test.tscn")
+	get_tree().change_scene_to_file("res://Scenes/scene_test/phase_4.tscn")
 
 
 func _on_back_pressed() -> void:
